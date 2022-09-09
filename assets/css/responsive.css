@@ -13,6 +13,19 @@
         overflow-y: scroll;
         white-space:nowrap;
     }
+    .catalogue-section .container .catalogue-aside{
+        width: 300px;
+        display: none;
+        height: 100vh;
+        /* padding: 20px 0; */
+        position: fixed;
+        overflow: scroll;
+        z-index: 999999;
+        /* position: absolute; */
+        top: 0;
+        left: -11px;
+        background-color: #fff;
+    }
 }
 
 @media (max-width:1281px) {
@@ -30,6 +43,10 @@
 
 @media (max-width:768px) {
     /* MD  */
+    .catalogue-section .container .catalogue-main .cm-articles .article .article-cont .a-side{
+        width: 100%;
+        height: 100px;
+    }
 }
 
 @media (max-width:801px) {

@@ -260,7 +260,7 @@
 /* PRODUCTS SECTION START  */
 
 .ps-grid-container .ps-grid-card{
-    height: 560px;
+    height: 500px;
     border: 1px #D9D9D9 solid;
     background-color: #fff;
     border-radius: 7px;
@@ -400,6 +400,174 @@ footer .footer-bottom{
     background-color: var(--main-blue);
     color: #fff;
 }
-
-
 /* FOOTER STYLING END  */
+
+
+/* CATALOGUE SECTION STYLING START */
+
+.catalogue-section{
+    background-color: var(--background-gray);
+}
+
+.catalogue-section .container .aside-single{
+    background-color: #fff;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+.catalogue-section .container .aside-single h3{
+    font-weight: 700;
+    font-size: 15px;
+}
+.catalogue-section .container .aside-single .ac-bottom ul{
+    list-style-type: none;
+    padding: 0;
+}
+.catalogue-section .container .aside-single .ac-bottom ul li{
+    margin: 15px 0;
+}
+.catalogue-section .container .aside-single .ac-bottom ul li a{
+    color: #000;
+    text-decoration: none;
+    transition: color ease-in-out .3s;
+}
+.catalogue-section .container .aside-single .ac-bottom ul li a:hover{
+    color: var(--main-blue);
+}
+
+.cm-filter-cont{
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+.cm-filter-cont h2{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.catalogue-section .container .catalogue-main .cm-articles{
+    background-color: rgb(205, 6, 6);
+}
+.catalogue-section .container .catalogue-main .cm-articles .article{
+    min-height: 220px;
+}
+
+.catalogue-section .container .catalogue-main .cm-articles .article .article-cont{
+    width: 98%;
+    /* height: 90%; */
+    min-height: 200px;
+}
+.catalogue-section .container .catalogue-main .cm-articles .article .article-cont .article-left{
+    width: 30%;
+}
+.catalogue-section .container .catalogue-main .cm-articles .article .article-cont .article-middle{
+    width: 40%;
+}
+.catalogue-section .container .catalogue-main .cm-articles .article .article-cont .article-right{
+    width: 30%;
+}
+/* CATALOGUE SECTION STYLING END */
+
+/* BREADCRUMB STYLING START  */
+.breadcrumb {
+    margin: 0;
+    height: 150px;
+    background-color: var(--main-blue);
+    color: #fff;
+}
+.breadcrumb .container h1{
+    font-weight: 700;
+    font-size: 34px;
+}
+.breadcrumb .container p a{
+    color: #fff;
+    text-decoration: none;
+    transition: all ease-in-out .3s;
+}
+.breadcrumb .container p a:hover{
+    color: #000;
+}
+
+/* BREADCRUMB STYLING END */
+
+/* SHOP SECTION STYLING START  */
+.shop-section{
+    background-color: var(--background-gray);
+}
+.shop-section .ss-top{
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.shop-section .ss-bottom{
+    margin-top: -80px;
+}
+.shop-section .ss-bottom .infos{
+    margin-top: 70px;
+}
+.shop-section .ss-bottom .infos p i{
+    color: var(--main-blue);
+    margin-right: 10px;
+}
+.shop-section .ss-bottom .infos p span{
+    font-weight: 400;
+    font-size: 20px;
+}
+.shop-section .ss-main .ss-grid-products-cont .ss-grid-products h3{
+    font-weight: 700;
+    font-size: 24px;
+}
+.shop-section .ss-main nav a{
+    color: #000;
+    text-decoration: none;
+}
+.shop-section .ss-main nav{
+    background-color: #fff;
+    border-radius: 7px;
+}
+.shop-section .ss-main nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+.shop-section .ss-main aside h4{
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.shop-section .ss-main aside p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+}
+.shop-section .ss-main aside .aside-cont{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+}
+.shop-section .ss-main aside .d-flex a{
+    /* margin: 10px; */
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+.shop-section .ss-main aside .d-flex .fb{
+    background-color: #4867AA;
+}
+.shop-section .ss-main aside .d-flex .tw{
+    background-color: #3E9FDE;
+}
+.shop-section .ss-main aside .wh{
+    background-color: #06d370;
+    border: #06d370;
+}
+/* SHOP SECTION STYLING START  */
+
+/* SINGLE PRODUCT SECTION STYLING START  */
+.single-product-section{
+    background-color: var(--background-gray);
+}
+
+
+/* SINGLE PRODUCT SECTION STYLING START  */

@@ -35,3 +35,15 @@ $('.ess-carroussel-container').slick({
   ]
 }
 );
+
+// Filtre button 
+$(function () {
+  $('.show-filtre').click(function(){
+    $('.catalogue-aside ').addClass('d-block');
+  });
+  $(document).on("click", function (e) {
+      if ($(e.target).is("#user-login-wrapper") === false) {
+          $("#user-login-wrapper").removeClass("wide");
+      }
+  });
+});
