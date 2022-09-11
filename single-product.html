@@ -122,22 +122,313 @@
      </div>
     <!-- NAVBAR END -->
     <div class="spacer"></div>
+    <div class="nav-closer position-absolute d-none">
+      <div></div>
+    </div>
     
      <section class="single-product-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-8">
-                    tete
+        <div class="container pt-2">
+            <div class="row py-5">
+                <div class="col-12 col-lg-9">
+                    <div class="product-details p-3">
+                        <div class="display-images d-flex flex-md-row flex-column-reverse">
+                            <div class="di-left">
+                                <img src="assets/images/annonces/article-1.png" alt="annonce">
+                                <img src="assets/images/annonces/annonce-2.png" alt="annonce">
+                                <img src="assets/images/annonces/annonce-3.png" alt="annonce">
+                                <img src="assets/images/annonces/article-1.png" alt="annonce">
+                                <img src="assets/images/annonces/annonce-2.png" alt="annonce">
+                                <img src="assets/images/annonces/annonce-3.png" alt="annonce">
+                                <img src="assets/images/annonces/article-1.png" alt="annonce">
+                                <img src="assets/images/annonces/annonce-2.png" alt="annonce">
+                                <img src="assets/images/annonces/annonce-3.png" alt="annonce">
+                            </div>
+                            <div class="di-right">
+                                <img src="assets/images/annonces/annonce-2.png" id='mainImage' alt="annonce">
+                            </div>
+                        </div>
+                        <div class="product-details-infos mt-3">
+                          <ul class="pdi-top d-flex">
+                            <li><i class="fa-regular fa-clock"></i> <span>23 Juin 2022</span></li>
+                            <li><i class="fa-solid fa-location-dot"></i> <span>Fass Paillotte, Dakar</span></li>
+                            <li><i class="fa-solid fa-eye"></i> <span>3,500 vues</span></li>
+                          </ul>  
+                          <div class="d-flex justify-content-between align-items-center">
+                              <span class="price-mobile d-lg-none">150,000 F CFA</span>    
+                              <button href="" class="show-shop-details d-block d-lg-none btn btn-sm btn-primary">Details de la boutique</button>
+                            </div><hr>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In eu mi bibendum neque egestas congue quisque. At urna condimentum mattis pellentesque id nibh tortor. Aliquam eleifend mi in nulla posuere. Sed sed risus pretium quam vulputate. Sit amet dictum sit amet justo donec enim diam vulputate. Condimentum lacinia quis vel eros donec ac odio. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Id interdum velit laoreet id. Enim diam vulputate ut pharetra sit. Dictum sit amet justo donec enim diam vulputate. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa.
+                            </p><hr>
+                            <ul class="pdi-top d-flex">
+                                <li><a class='' href=""><i class="fa-solid fa-heart"></i> <span>23 Juin 2022</span></a></li>
+                                <li><a class='' href=""><i class="fa-solid fa-triangle-exclamation"></i> <span>23 Juin 2022</span></a></li>
+                                <li><a class='' href=""><i class="fa-solid fa-share-nodes"></i> <span>23 Juin 2022</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="localisation mt-3 p-3">
+                        <h6>Localisation</h6><hr>
+                        <div class=" mt-2">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.2785366034486!2d144.97741155106596!3d-37.83036464266739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad64296fb298d3b%3A0xf0456760531d7c0!2sRoyal%20Botanic%20Gardens%20Victoria%20-%20Melbourne%20Gardens!5e0!3m2!1sen!2s!4v1661682177183!5m2!1sen!2s"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="related-products mt-3 p-3">
+                        <div class="d-flex justify-content-between">
+                            <h6>Produits liés</h6>
+                            <div class="btns">
+                                <a href="" class="btn-primary" id="button-rp-left"><i class="fa-solid fa-chevron-left"></i></a>
+                                <a href="" class="btn-primary" id="button-rp-right"><i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div><hr>
+                        <div class="products-related-carroussel">
+                            <div class="ps-grid-card-cont mx-2">
+                                <div class="ps-grid-card">
+                                  <div class="ps-grid-card-top h-50 position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+                                    <a href="" class="position-absolute">
+                                      <img src="assets/images/utils/heart.svg" alt="icon">
+                                    </a>
+                                  </div>
+                                  <div class="ps-grid-card-bottom h-50 p-3">
+                                    <h5 class="mb-3">150000 F CFA</h5>
+                                    <p>
+                                      Article qui tient sur plusieurs lignes
+                                      par exemple.
+                                    </p>
+                                    <div class="article-infos">
+                                      <div class="loc-info">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span class="mx-2">Dakar, Senegal</span>
+                                      </div><br>
+                                      <div class="usr-info">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span class="mx-2">Bamba Ndiaye</span>
+                                      </div><br>
+                                    </div>
+                                    <div class="article-btns d-flex justify-content-between align-items-center">
+                                      <a href="" class="btn btn-sm btn-outline-primary">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span class="mx-2">Contacter le vendeur</span>
+                                      </a>
+                                      <img src="assets/images/utils/certif.svg" alt="certif">
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="ps-grid-card-cont mx-2">
+                                <div class="ps-grid-card">
+                                  <div class="ps-grid-card-top h-50 position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+                                    <a href="" class="position-absolute">
+                                      <img src="assets/images/utils/heart.svg" alt="icon">
+                                    </a>
+                                  </div>
+                                  <div class="ps-grid-card-bottom h-50 p-3">
+                                    <h5 class="mb-3">150000 F CFA</h5>
+                                    <p>
+                                      Article qui tient sur plusieurs lignes
+                                      par exemple.
+                                    </p>
+                                    <div class="article-infos">
+                                      <div class="loc-info">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span class="mx-2">Dakar, Senegal</span>
+                                      </div><br>
+                                      <div class="usr-info">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span class="mx-2">Bamba Ndiaye</span>
+                                      </div><br>
+                                    </div>
+                                    <div class="article-btns d-flex justify-content-between align-items-center">
+                                      <a href="" class="btn btn-sm btn-outline-primary">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span class="mx-2">Contacter le vendeur</span>
+                                      </a>
+                                      <img src="assets/images/utils/certif.svg" alt="certif">
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="ps-grid-card-cont mx-2">
+                                <div class="ps-grid-card">
+                                  <div class="ps-grid-card-top h-50 position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+                                    <a href="" class="position-absolute">
+                                      <img src="assets/images/utils/heart.svg" alt="icon">
+                                    </a>
+                                  </div>
+                                  <div class="ps-grid-card-bottom h-50 p-3">
+                                    <h5 class="mb-3">150000 F CFA</h5>
+                                    <p>
+                                      Article qui tient sur plusieurs lignes
+                                      par exemple.
+                                    </p>
+                                    <div class="article-infos">
+                                      <div class="loc-info">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span class="mx-2">Dakar, Senegal</span>
+                                      </div><br>
+                                      <div class="usr-info">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span class="mx-2">Bamba Ndiaye</span>
+                                      </div><br>
+                                    </div>
+                                    <div class="article-btns d-flex justify-content-between align-items-center">
+                                      <a href="" class="btn btn-sm btn-outline-primary">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span class="mx-2">Contacter le vendeur</span>
+                                      </a>
+                                      <img src="assets/images/utils/certif.svg" alt="certif">
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="ps-grid-card-cont mx-2">
+                                <div class="ps-grid-card">
+                                  <div class="ps-grid-card-top h-50 position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+                                    <a href="" class="position-absolute">
+                                      <img src="assets/images/utils/heart.svg" alt="icon">
+                                    </a>
+                                  </div>
+                                  <div class="ps-grid-card-bottom h-50 p-3">
+                                    <h5 class="mb-3">150000 F CFA</h5>
+                                    <p>
+                                      Article qui tient sur plusieurs lignes
+                                      par exemple.
+                                    </p>
+                                    <div class="article-infos">
+                                      <div class="loc-info">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span class="mx-2">Dakar, Senegal</span>
+                                      </div><br>
+                                      <div class="usr-info">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span class="mx-2">Bamba Ndiaye</span>
+                                      </div><br>
+                                    </div>
+                                    <div class="article-btns d-flex justify-content-between align-items-center">
+                                      <a href="" class="btn btn-sm btn-outline-primary">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span class="mx-2">Contacter le vendeur</span>
+                                      </a>
+                                      <img src="assets/images/utils/certif.svg" alt="certif">
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="ps-grid-card-cont mx-2">
+                                <div class="ps-grid-card">
+                                  <div class="ps-grid-card-top h-50 position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+                                    <a href="" class="position-absolute">
+                                      <img src="assets/images/utils/heart.svg" alt="icon">
+                                    </a>
+                                  </div>
+                                  <div class="ps-grid-card-bottom h-50 p-3">
+                                    <h5 class="mb-3">150000 F CFA</h5>
+                                    <p>
+                                      Article qui tient sur plusieurs lignes
+                                      par exemple.
+                                    </p>
+                                    <div class="article-infos">
+                                      <div class="loc-info">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span class="mx-2">Dakar, Senegal</span>
+                                      </div><br>
+                                      <div class="usr-info">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span class="mx-2">Bamba Ndiaye</span>
+                                      </div><br>
+                                    </div>
+                                    <div class="article-btns d-flex justify-content-between align-items-center">
+                                      <a href="" class="btn btn-sm btn-outline-primary">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span class="mx-2">Contacter le vendeur</span>
+                                      </a>
+                                      <img src="assets/images/utils/certif.svg" alt="certif">
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="ps-grid-card-cont mx-2">
+                                <div class="ps-grid-card">
+                                  <div class="ps-grid-card-top h-50 position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+                                    <a href="" class="position-absolute">
+                                      <img src="assets/images/utils/heart.svg" alt="icon">
+                                    </a>
+                                  </div>
+                                  <div class="ps-grid-card-bottom h-50 p-3">
+                                    <h5 class="mb-3">150000 F CFA</h5>
+                                    <p>
+                                      Article qui tient sur plusieurs lignes
+                                      par exemple.
+                                    </p>
+                                    <div class="article-infos">
+                                      <div class="loc-info">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span class="mx-2">Dakar, Senegal</span>
+                                      </div><br>
+                                      <div class="usr-info">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span class="mx-2">Bamba Ndiaye</span>
+                                      </div><br>
+                                    </div>
+                                    <div class="article-btns d-flex justify-content-between align-items-center">
+                                      <a href="" class="btn btn-sm btn-outline-primary">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span class="mx-2">Contacter le vendeur</span>
+                                      </a>
+                                      <img src="assets/images/utils/certif.svg" alt="certif">
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <aside class="col-4 d-none d-lg-block">
-                    aside 
+                <aside class="single-product-aside d-none col-3 d-lg-block">
+                    <div class="aside-cont">
+                        <h2 class="text-center d-none d-lg-block">150.000 F CFA</h2>
+                        <div class="aside-shop-infos p-3">
+                            <h6>Infos du vendeur</h6>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <img src="assets/images/shops/profile.png" alt="shop" class="img-thumbnail">
+                                <h5>Amama Shop</h5>
+                            </div>
+                            <ul class="mt-3">
+                                <li>
+                                    <p>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Fass Paillotte en face de la
+                                        mosquee qui est à l’angle là.
+                                    </p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-house"></i>
+                                    <a href="" class="">
+                                        <span> Voir la boutique</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="aside-btns-cont mt-4">
+                                <a href="" class="btn btn-primary mb-2 w-100"><i class="fa-solid fa-phone"></i><span class="mx-2"> Telephone</span></a>
+                                <a href="" class="btn btn-success wh mb-2 w-100"><i class="fa-brands fa-whatsapp"></i><span class="mx-2"> Whatsapp</span></a>
+                                <a href="" class="btn btn-dark mb-2 w-100"><i class="fa-solid fa-location-dot"></i><span class="mx-2"> Localisation</span></a>
+                            </div>
+                            <div class="aside-poster d-none d-lg-block mt-5 w-100 bg-danger">
+                                <img src="assets/images/shops/wall.png" alt="poster">
+                            </div>
+                        </div>
+                    </div>
                 </aside>
             </div>
         </div>
      </section>
 
     <!-- FOOTER START -->
-    <footer>
+    <footer class="pt-5 pt-lg-0">
       <div class="footer-top container d-flex align-items-center mx-auto">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 w-100">
           <div class="col ft-contact ft-card position-relative">
