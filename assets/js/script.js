@@ -84,8 +84,6 @@ $('.nav-closer').click(function(){
 
 // Filtre button 
 $('.show-shop-details').click(function(){
-  // alert('ok')
   $('.nav-closer').removeClass('d-none');
   $('.single-product-aside').removeClass('d-none');
-  // $('.catalogue-aside').removeClass('d-none');
 });

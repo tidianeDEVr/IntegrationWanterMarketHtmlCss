@@ -43,7 +43,7 @@
     min-height: 165px;
     background-color: #fff;
     position: fixed;
-    z-index: 99999;
+    z-index: 5;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -157,7 +157,7 @@
     backdrop-filter: blur(3px);
     bottom: 0;
     left: 0;
-    z-index: 99999;
+    z-index: 10;
 }
 /* HERO SECTION STYLING START  */
 .hero-section{
@@ -696,7 +696,7 @@ footer .footer-bottom{
     font-size: 12px;
 }
 .single-product-section .container .row aside{
-    z-index: 999999;
+    z-index: 15;
 }
 .single-product-section .container .row aside .aside-cont h2{
     background-color: var(--main-blue);
