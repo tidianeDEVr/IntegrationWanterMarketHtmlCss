@@ -108,6 +108,19 @@
     footer .footer-bottom-cont{
         font-size: 8px;
     }
+    .ps-grid-card{
+        height: 550px;
+    }
+
+    .ps-grid-card .ps-grid-card-bottom h5{
+        font-size: 18px;
+    }
+    .ps-grid-card .ps-grid-card-bottom .article-infos span{
+        font-size: 14px;
+    }
+    .ps-grid-card .ps-grid-card-bottom .article-btns span{
+        display: none;
+    }
 }
 
 @media (max-width:320px) {

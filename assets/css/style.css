@@ -24,18 +24,17 @@
 ::-webkit-scrollbar {
     width: 3px;
     height: 3px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     background: #f1f1f1;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: var(--main-blue);
-  }
-  
+}
 /*  GENERAL STYLING END */
 
 /* NAVBAR STYLING START */
@@ -286,7 +285,7 @@
 /* PRODUCTS SECTION START  */
 
 .ps-grid-card{
-    height: 500px;
+    height: 530px;
     border: 1px #D9D9D9 solid;
     background-color: #fff;
     border-radius: 7px;
@@ -324,7 +323,10 @@
 .ps-grid-card .ps-grid-card-bottom .article-infos .loc-info{
     margin-top: -10px;
 }
-
+.ps-grid-card .ps-grid-card-bottom .article-infos .loc-info i,
+.ps-grid-card .ps-grid-card-bottom .article-infos .usr-info i{
+    color: var(--main-blue);
+}
 .ps-grid-card .ps-grid-card-bottom .article-infos .usr-info{
     margin-top: -15px;
 }
