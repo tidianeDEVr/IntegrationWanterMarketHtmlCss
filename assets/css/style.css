@@ -302,13 +302,16 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 50% !important;
 }
 
 .ps-grid-card .ps-grid-card-top a{
     top: 5px;
     right: 5px;
 }
-
+.ps-grid-card .ps-grid-card-bottom{
+    height: 50% !important;
+}
 .ps-grid-card .ps-grid-card-bottom h5{
     font-weight: 800;
     font-size: 25px;

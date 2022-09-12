@@ -111,8 +111,14 @@
         font-size: 8px;
     }
     .ps-grid-card{
-        height: 360px;
+        height: 440px;
         /* height: 450px; */
+    }
+    .ps-grid-card .ps-grid-card-top{
+        height: 60% !important;
+    }
+    .ps-grid-card .ps-grid-card-bottom{
+        height: 40% !important;
     }
     .ps-grid-card .ps-grid-card-bottom p{
         font-size: 13px;
