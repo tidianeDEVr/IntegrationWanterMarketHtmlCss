@@ -13,7 +13,7 @@ $('.hero-carroussel-container').slick({
 $('.ess-carroussel-container').slick({
   infinite: true,
   speed: 300,
-  slidesToShow: 4,
+  slidesToShow: 3,
   slidesToScroll: 4,
   prevArrow: '#button-ess-left',
   nextArrow: '#button-ess-right',
