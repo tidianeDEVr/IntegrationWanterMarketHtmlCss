@@ -80,6 +80,7 @@ $('.nav-closer').click(function(){
   $('.nav-closer').addClass('d-none');
   $('.catalogue-aside').addClass('d-none');
   $('.single-product-aside').addClass('d-none');
+  $('.details-vendeur').addClass('d-none');
 })
 
 // Filtre button 
@@ -87,3 +88,9 @@ $('.show-shop-details').click(function(){
   $('.nav-closer').removeClass('d-none');
   $('.single-product-aside').removeClass('d-none');
 });
+
+// Details vendeur
+$('.btn-details-vendeur').click(function(){
+  $('.nav-closer').removeClass('d-none');
+  $('.details-vendeur').removeClass('d-none');
+})

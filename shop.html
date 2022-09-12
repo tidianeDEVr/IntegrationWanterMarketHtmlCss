@@ -122,6 +122,9 @@
      </div>
     <!-- NAVBAR END -->
     <div class="spacer" ></div>
+    <div class="nav-closer position-absolute d-none">
+      <div></div>
+    </div>
 
     <section class="shop-section py-5">
         <div class="container">
@@ -132,7 +135,7 @@
                     <p class="px-5"><i class="fa-solid fa-location-dot"></i> <span>Fass Paillotte en face de la mosquee qui est à l’angle là.</span></p>
                     <p class="px-5"><i class="fa-solid fa-user"></i> <span>Membre depuis Mars 2022</span></p>
                     <div class="mx-auto">
-                      <a href="" class="d-block d-sm-none btn btn-primary btn-sm">Details du vendeur</a>
+                      <a href="" class="d-block d-sm-none btn btn-primary btn-sm btn-details-vendeur">Details du vendeur</a>
                     </div>
                 </div>
             </div>
@@ -447,7 +450,7 @@
                                 <a href="" class="btn btn-primary fb"><i class="fa-brands fa-facebook-f"></i></a>
                                 <a href="" class="btn btn-primary tw"><i class="fa-brands fa-twitter"></i></a>
                             </div>
-                            <button href="" class="mx-2 btn btn-sm btn-primary">Details du vendeur</button>
+                            <button href="" class="mx-2 btn btn-sm btn-primary btn-details-vendeur">Details du vendeur</button>
                         </div>
                     </div>
                     <div class="aside-btns-cont mt-4 px-4">
@@ -457,6 +460,27 @@
                         <a href="" class="btn btn-outline-primary mb-2 w-100"><i class="fa-solid fa-user-plus"></i><span class="mx-2"> S’abonner</span></a>
                     </div>
                 </aside>
+                <div class="d-none details-vendeur position-fixed">
+                  <div class="container pt-2">
+                    <h3>Coordonnees :</h3>
+                    <ul>
+                      <li><i class="fa-solid fa-user"></i> <span>Nom complet</span></li>
+                      <li><i class="fa-solid fa-envelope"></i> <span>adress@xyz.com</span></li>
+                      <li><i class="fa-solid fa-phone"></i> <span>781234567</span></li>
+                      <li><i class="fa-solid fa-location-dot"></i> <span>Avenue lamine gueye</span></li>
+                      <li>
+                        <span>Note : </span>
+                        <div class="d-flex">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
             </div>
         </div>
     </section>

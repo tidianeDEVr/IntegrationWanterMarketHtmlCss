@@ -44,7 +44,7 @@
     min-height: 165px;
     background-color: #fff;
     position: fixed;
-    z-index: 5000;
+    z-index: 50;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -156,7 +156,7 @@
     backdrop-filter: blur(3px);
     bottom: 0;
     left: 0;
-    z-index: 10;
+    z-index: 55;
 }
 /* HERO SECTION STYLING START  */
 .hero-section{
@@ -378,7 +378,7 @@ footer{
     background-color: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     position: relative;
-    z-index: 100 !important;
+    z-index: 49 !important;
 }
 footer .footer-top{
     min-height: 400px;
@@ -641,6 +641,27 @@ footer .footer-bottom{
 .shop-section .ss-main aside .wh{
     background-color: #06d370;
     border: #06d370;
+}
+.details-vendeur{
+    background-color: #fff;
+    z-index: 99;
+    height: 200px;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+
+}
+.details-vendeur .container h3{
+    color: var(--main-blue);
+    font-size: 20px;
+}
+.details-vendeur .container ul{
+    padding: 0;
+    list-style-type: none;
+}
+.details-vendeur .container ul li i {
+    color: var(--main-blue);
+    margin-right: 10px;
 }
 /* SHOP SECTION STYLING START  */
 
