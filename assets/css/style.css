@@ -435,7 +435,7 @@ footer .container p a {
 }
 
 footer .footer-bottom{
-    height: 75px;
+    height: 40px;
     background-color: var(--main-blue);
     color: #fff;
 }
@@ -552,7 +552,7 @@ footer .footer-bottom{
 /* BREADCRUMB STYLING START  */
 .breadcrumb {
     margin: 0;
-    height: 150px;
+    height: 100px;
     background-color: var(--main-blue);
     color: #fff;
 }
@@ -799,3 +799,29 @@ footer .footer-bottom{
     border-radius: 7px;
 }
 /* SINGLE PRODUCT SECTION STYLING START  */
+
+/* FORM SECTION  STYLING START  */
+.form-section{
+    min-height: 75vh;
+    background-color: var(--background-gray);
+}
+
+.form-section .img-cont img{
+    max-height: 250px;
+}
+.form-section .card{
+    width: 600px;
+}
+.form-section .card .card-header{
+    background-color: var(--main-blue);
+    color: #fff;
+    font-weight: 700;
+}
+.form-section .card .card-body button{
+    background-color: var(--main-blue);
+}
+.form-section .card .card-body .bottom-form a{
+    text-decoration: none;
+}
+
+/* FORM SECTION  STYLING END  */

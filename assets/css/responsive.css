@@ -151,6 +151,13 @@
     .single-product-aside{
         height: auto;
     }
+    .form-section .card{
+        width: 95%;
+    }
+    .form-section .img-cont img{
+        width: 150px;
+        margin: 10px 0;
+    }
 }
 
 @media (max-width:320px) {

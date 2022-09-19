@@ -93,4 +93,22 @@ $('.show-shop-details').click(function(){
 $('.btn-details-vendeur').click(function(){
   $('.nav-closer').removeClass('d-none');
   $('.details-vendeur').removeClass('d-none');
-})
+});
+
+// Bootstrap Form Validation 
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+  const forms = document.querySelectorAll('.needs-validation')
+
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
