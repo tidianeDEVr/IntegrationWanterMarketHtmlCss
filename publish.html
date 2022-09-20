@@ -10,8 +10,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <!-- IntlTel CSS -->
-    <link rel="stylesheet" href="assets/css/intlTelInput.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Font Awesome -->
@@ -121,88 +119,33 @@
       </div>
     </div>
     <!-- NAVBAR END -->
-    <div class="spacer"></div>
+    <div class="spacer" ></div>
 
-    <section class="form-section" >
-        <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2">
-            <div class="img-cont col mt-0 mt-sm-5">
-              <div class="d-flex w-100 h-100 justify-content-center align-items-start">
-                  <img src="assets/images/utils/welcoming.svg" alt="Illustration">
-              </div>
-          </div>
-          <div class="col pt-4 pb-3 d-flex align-items-start justify-content-center">
-            <div class="card">
-              <div class="card-header">
-              Formulaire d'inscription
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">
-                    Créer votre compte vendeur
-                </h5>
-                <p class="card-text">
-                    Ce compte vous permet d'avoir accès aux différentes fonctionnalités pro disponible sur votre market place selon votre formule d'abonnement.
-                </p>
-                <form class="needs-validation" novalidate>
-                    <div class="row">
-                        <div class="mb-3 col">
-                            <label for="exampleInputEmail1" class="form-label">Nom</label>
-                            <input type="text" minlength="2" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-                        </div>
-                        <div class="mb-3 col">
-                            <label for="exampleInputPassword1" class="form-label">Prénom</label>
-                            <input type="text" minlength="5" class="form-control" id="exampleInputPassword1" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Nom de la boutique</label>
-                            <input type="text" minlength="5" class="form-control" id="exampleInputPassword1" required>
-                            <div id="emailHelp" class="form-text"><i class="fa-solid fa-triangle-exclamation"></i> Assurez vous d'être le propriétaire légal de ce nom commercial.</div>
-                        </div>
-                        <div class="mb-3">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected disabled>Votre Pays</option>
-                                <option>Senegal</option>
-                                <option>Togo</option>
-                                <option>Mali</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Adresse</label>
-                            <input type="text" minlength="10" placeholder="Commune de Parcelles Assainies (Unite 13)" class="form-control" id="exampleInputPassword1" required>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label col-12">Téléphone</label>
-                            <input class="form-control" id='phone' type="tel" required>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Adresse e-mail</label>
-                        <input type="email" minlength="10" placeholder="tidiane@xyz.com" class="form-control" id="exampleInputPassword1" required>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
-                            <input type="password" minlength="10" class="form-control" id="exampleInputPassword1" required>
-                        </div>
-                        <div class="col">
-                            <label for="exampleInputPassword1" class="form-label">Confirmation </label>
-                            <input type="password" minlength="10" class="form-control" id="exampleInputPassword1" required>
-                        </div>
-                    </div>
-                    <button type="submit" class="mt-3 w-100 btn btn-primary">S'inscrire</button>
-                </form>
-                <div class="bottom-form text-center mt-3">
-                    <p>
-                        Vous avez deja un compte ? <a href="">Connectez-vous</a>
-                    </p>
-                </div>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
+    <!-- PROFILE SECTION  START  -->
+    <section class="profile-section vh-100 d-flex">
+      <aside class="py-3">
+        <ul class="mx-3 list-group">
+          <label class="mb-1">Pages</label>
+          <li><a href="" class="btn"><i class="fa-solid fa-gauge"></i><span>Tableau de bord</span></a></li>
+          <label class="mb-1">Annonces</label>
+          <li><a href="" class="btn btn-primary"><i class="fa-solid fa-upload"></i><span>Publier une annonce</span></a></li>
+          <li><a href="" class="btn"><i class="fa-solid fa-list"></i><span>Lister mes annonces</span></a></li>
+          <label class="mb-1">Boutique</label>
+          <li><a href="" class="btn"><i class="fa-solid fa-gear"></i><span>Configurer ma boutique</span></a></li>
+          <li><a href="" class="btn"><i class="fa-solid fa-eye"></i><span>Aperçu de ma boutique</span></a></li>
+          <label class="mb-1">Compte</label>
+          <li><a href="" class="btn"><i class="fa-solid fa-user"></i><span>Mon profile</span></a></li>
+          <li><a href="" class="btn"><i class="fa-solid fa-money-bills"></i><span>Mes achats</span></a></li>
+          <li><a href="" class="btn"><i class="fa-solid fa-file-invoice"></i><span>Mes abonnements</span></a></li>
+          <li><a href="" class="btn"><i class="fa-solid fa-right-from-bracket"></i><span>Deconnexion</span></a></li>
+        </ul>
+      </aside>
+      <div class="main-profile flex-fill p-3">
+        <h5>Publier une annonce</h5>
         
+      </div>
     </section>
+    <!-- PROFILE SECTION  END  -->
     
     <!-- FOOTER START -->
     <footer>
@@ -219,10 +162,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <!-- IntlTel JS -->
-    <script type="text/javascript" src="assets/js/intlTelInput.js"></script>
-    <script type="text/javascript" src="assets/js/telScript.js"></script>
 
     <!-- JavaScript Bootstrap with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

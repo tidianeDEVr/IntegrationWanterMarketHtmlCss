@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     display: block;
-      
+    z-index: 99999;
 }
 
 .iti * {

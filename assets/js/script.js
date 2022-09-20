@@ -66,7 +66,8 @@ $('.products-related-carroussel').slick({
 // Filtre button 
 $('.show-filtre').click(function(){
   $('.nav-closer').removeClass('d-none');
-  $('.catalogue-aside').removeClass('d-none');
+  // $('.catalogue-aside').removeClass('d-none');
+  $( ".catalogue-aside" ).toggle(300);
 });
 
 // Product Image Change 
@@ -78,9 +79,10 @@ $('.single-product-section .container .row .product-details .display-images .di-
 // Hide Aside
 $('.nav-closer').click(function(){
   $('.nav-closer').addClass('d-none');
-  $('.catalogue-aside').addClass('d-none');
   $('.single-product-aside').addClass('d-none');
   $('.details-vendeur').addClass('d-none');
+  $( ".dashboard-aside" ).toggle(300);
+  $( ".catalogue-aside" ).toggle(300);
 })
 
 // Filtre button 
@@ -112,3 +114,32 @@ $('.btn-details-vendeur').click(function(){
     }, false)
   })
 })()
+
+// Change Avatar
+$(function() {
+  $('#avatar').change(function() {
+      var input = this;
+      var url = $(this).val();
+      var ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
+      if (input.files && input.files[0] && (ext == "gif" || ext == "png" || ext == "jpeg" || ext == "jpg")) {
+          var reader = new FileReader();
+
+          reader.onload = function(e) {
+              $('#avatarImgDisplay').attr('src', e.target.result);
+          }
+          reader.readAsDataURL(input.files[0]);
+      } else {
+          $('#avatarImgDisplay').attr('src', 'assets/images/utils/user-default.png');
+      }
+  });
+});
+
+// Hide/Show Aside 
+$('#hideAsideBtn').click(function(){
+  $( ".dashboard-aside" ).toggle(300);
+  let sceenSize = $( window ).width();
+  if (sceenSize < 500 ) $('.nav-closer').removeClass('d-none');
+});
+
+// DatePicker
+$('#datepicker').datepicker();

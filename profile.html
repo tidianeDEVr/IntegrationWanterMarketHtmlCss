@@ -12,6 +12,7 @@
     />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"> 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
@@ -23,9 +24,9 @@
     <!-- NAVBAR START -->
     <div class="main-navbar mx-auto w-100">
       <div class="main-navbar-container">
-        <div class="main-navbar-top container pt-2">
+        <div class="main-navbar-top container my-3 my-md-auto mx-2 mx-md-auto mt-sm-1">
           <nav class="row">
-            <a class="brands btn d-flex col col-lg-3 col-md-3 col-sm-6" href="#">
+            <a class="brands p-0 btn d-flex col col-lg-3 col-md-3 col-sm-6" href="#">
               <div class="d-flex align-items-center">
                 <img src="assets/images/identity/logo.png" alt="logo wanter market" class="">
               </div>
@@ -82,9 +83,8 @@
           </form>
         </div>
         <!-- Mobile Search End -->
-        <hr class="d-none d-md-block">
-        <br class="d-block d-md-none">
-        <div class="main-navbar-bottom container">
+        <hr class="d-none d-md-block mt-1 ">
+        <div class="d-none pb-2 d-md-block main-navbar-bottom container">
           <div class="row">
               <div class="form col col-xl-2 col-lg-3 col-md-6">
               <form>
@@ -117,83 +117,210 @@
               </div>
           </div>
         </div>
-        <br class="d-block d-md-none">
       </div>
-     </div>
+    </div>
     <!-- NAVBAR END -->
     <div class="spacer" ></div>
+    <div class="nav-closer position-absolute d-none">
+      <div></div>
+    </div>
 
     <!-- PROFILE SECTION  START  -->
-     <section class="profile-section vh-100 bg-black">
-        <!-- BREADCRUMB START  -->
-        <div class="breadcrumb mt-5 m-md-0 d-flex align-items-center">
-            <div class="container">
-                <h1>Profile</h1>
-                <p><a href="">Accueil</a> / Profile</p>
-            </div>
+    <section class="profile-section d-flex">
+      <aside class="py-3 dashboard-aside">
+        <ul class="mx-3 list-group">
+          <label>Page</label>
+          <li><a href="" class="btn"><i class="fa-solid fa-gauge"></i><span>Tableau de bord</span></a></li>
+          <label class="mb-1">Annonces</label>
+          <li><a href="" class="btn"><i class="fa-solid fa-upload"></i><span>Publier une annonce</span></a></li>
+          <li><a href="" class="btn"><i class="fa-solid fa-list"></i><span>Lister mes annonces</span></a></li>
+          <label class="mb-1">Boutique</label>
+          <li><a href="" class="btn"><i class="fa-solid fa-gear"></i><span>Configurer ma boutique</span></a></li>
+          <li><a href="" class="btn"><i class="fa-solid fa-eye"></i><span>Aperçu de ma boutique</span></a></li>
+          <label class="mb-1">Compte</label>
+          <li><a href="" class="btn btn-primary"><i class="fa-solid fa-user"></i><span>Mon profile</span></a></li>
+          <li><a href="" class="btn"><i class="fa-solid fa-money-bills"></i><span>Mes achats</span></a></li>
+          <li><a href="" class="btn"><i class="fa-solid fa-file-invoice"></i><span>Mes abonnements</span></a></li>
+          <li><a href="" class="btn"><i class="fa-solid fa-right-from-bracket"></i><span>Deconnexion</span></a></li>
+        </ul>
+      </aside>
+      <div class="main-profile flex-fill p-3">
+        <div class="container mb-2 d-flex align-items-center justify-content-between">
+          <button type="button" class="btn btn-primary" id="hideAsideBtn"><i class="fas fa-bars"></i></button>
+          <h5 class="text-end">Votre profile</h5>
         </div>
-        <!-- BREADCRUMB START  -->
-     </section>
+        <div class="container mb-3">
+          <div class="row">
+            <div class="col col-12 col-md-5 mb-3">
+              <div class="card">
+                <div class="card-header">Avatar</div>
+                <div class="card-body">
+                  <form action="">
+                    <div class="text-center">
+                      <img id="avatarImgDisplay" src="assets/images/utils/user-default.png" alt="user">
+                      <div class="mb-3 w-75 mx-auto">
+                        <label for="formFile" class="form-label">Vous pouvez changer votre avatar</label>
+                        <input class="form-control" type="file" id="avatar">
+                      </div>
+                      <a href="" class="btn btn-primary">Telecharger</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col col-12 col-md-7 mb-3">
+              <div class="card">
+                <div class="card-header">Informations de bases</div>
+                <div class="card-body">
+                  <form class="needs-validation" novalidate>
+                    <div class="row">
+                      <div class="col">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Nom</label>
+                          <input type="text" value="Ndiaye" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Prénom</label>
+                          <input type="text" value="Cheikh Tidiane" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                        </div>
+                      </div>  
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Adresse e-mail</label>
+                          <input type="email" value="cheikh@xyz.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Téléphone</label>
+                          <input type="email" value="cheikh@xyz.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Genre</label>
+                          <select class="form-select mb-3" aria-label="Default select example">
+                            <option>Homme</option>
+                            <option>Femme</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Date de naissance</label>
+                          <div class="input-group date" id="datepicker">
+                            <input type="text" class="form-control" value="22/09/1999">
+                            <span class="input-group-append">
+                                <span class="input-group-text bg-white d-block">
+                                    <i class="fa fa-calendar" style="color: var(--main-blue);"></i>
+                                </span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button class="btn btn-primary">Changer</button>
+                    </div>
+                  </form> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row  row-cols-1 row-cols-md-2">
+            <div class="col mb-3">
+              <div class="card">
+                <div class="card-header">Mot de passe</div>
+                <div class="card-body">
+                  Vous voulez changer votre mot de passe ?
+                  <button type="button" class="btn" style="color: var(--main-blue);" data-bs-toggle="modal" data-bs-target="#modalChangePassword">
+                    Cliquez-ici
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="modalChangePassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <form class="needs-validation" novalidate>
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Vous voulez changer votre mot de passe ?</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Mot de passe actuel</label>
+                          <input type="password" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Nouveau mot de passe actuel</label>
+                          <input type="password" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Confirmation du nouveau mot de passe</label>
+                          <input type="password" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                      <button type="submit" class="btn btn-primary">Changer</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="card">
+                <div class="card-header">Paramètres supplémentaires</div>
+                <div class="card-body">
+                  Vous voulez supprimer votre compte ?
+                  <button type="button" class="btn" style="color: var(--main-blue);" data-bs-toggle="modal" data-bs-target="#modalDeleteAccount">
+                    Cliquez-ici
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="modalDeleteAccount" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <form class="needs-validation" novalidate>
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Vous voulez supprimer votre compte ?</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Mot de passe actuel</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="form-check form-switch mb-3">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" required>
+                          <label class="form-check-label" for="flexSwitchCheckDefault">Je veux supprimer ce compte</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                      <button type="submit" class="btn btn-primary">Changer</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- PROFILE SECTION  END  -->
     
     <!-- FOOTER START -->
     <footer>
-      <div class="footer-top container d-flex align-items-center mx-auto">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 w-100">
-          <div class="col ft-contact ft-card position-relative">
-            <div class="ft-contact-left position-absolute">
-              <img src="assets/images/utils/bx_support.svg" alt="support">
-            </div>
-            <div class="ft-contact-right">
-              <div class="ft-top">
-                <h6>CONTACTEZ-NOUS 24/7</h6>
-              </div>
-              <h5>+221 77 110 02 02</h5>
-              <ul>
-                <li>contact@wantermarket.sn</li>
-                <li>Rue 11, Fass Delorme,</li>
-                <li>Dakar Senegal</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col ft-raccourcis ft-card">
-            <div class="ft-top">
-              <h6>RACCOURCIS</h6>
-            </div>
-            <ul>
-              <li><a href="#">Agroalimentaire</a></li>
-              <li><a href="#">Materiaux et Equipements</a></li>
-              <li><a href="#">Mode et beaute</a></li>
-              <li><a href="#">Meubles et Decorations</a></li>
-              <li><a href="#">Immobilier</a></li>
-            </ul>
-          </div>
-          <div class="col ft-categories ft-card">
-            <div class="ft-top"></div>
-            <ul>
-              <li><a href="">Electromenager</a></li>
-              <li><a href="">Electronique</a></li>
-              <li><a href="">Telephone et Tablette</a></li>
-              <li><a href="">Automobile</a></li>
-            </ul>
-          </div>
-          <div class="col ft-navigation ft-card">
-            <div class="ft-top">
-              <h6>NAVIGATION</h6>
-            </div>
-            <ul>
-              <li><a href="">Les boutiques</a></li>
-              <li><a href="">Devenir vendeur</a></li>
-              <li><a href="">Connexion</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="container mb-5">
-        <p class="text-center">
-          En utilisant nos services, vous acceptez nos <a href=""> Règles et Conditions d’Utilisation</a>. Les données que vous nous transmettez sont protégées, pour plus d’informations veuillez consulter notre <a href="">Politiques de Confidentialité</a>.
-        </p>
-      </div>
       <div class="footer-bottom d-flex align-items-center">
         <div class="footer-bottom-cont container d-flex justify-content-between">
           <div class="fbc-left">Copyright © 2022 Wanter Market. All rights reserved.</div>
@@ -210,6 +337,7 @@
 
     <!-- JavaScript Bootstrap with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script src="assets/js/script.js" defer></script>
 </body>
 </html>
