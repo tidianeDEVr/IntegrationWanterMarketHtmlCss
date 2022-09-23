@@ -36,7 +36,13 @@
     background: var(--main-blue);
 }
 
-.exclusives-shops-section  .slick-list{padding: 0 20% 0 0 !important }
+.exclusives-shops-section  .slick-list{
+    padding: 0 20% 0 0 !important ;
+}
+.products-related-carroussel .slick-list{
+    padding: 0 10% 0 0 !important 
+}
+
 /*  GENERAL STYLING END */
 
 /* NAVBAR STYLING START */
@@ -84,6 +90,9 @@
 }
 .main-navbar-top nav form button i{
     color: var(--main-blue);
+}
+.main-navbar-top nav .fa-action{
+    font-size: 20px;
 }
 .main-navbar-top .main-navbar-top-actions .btn .heart-number{
     width: 12px;
@@ -158,7 +167,7 @@
 }
 /* HERO SECTION STYLING START  */
 .hero-section{
-    background: url(../images/backgrounds/hero-bg.png) no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/backgrounds/hero-bg.png');
     background-size: cover;
     height: 380px;
 }
@@ -174,6 +183,7 @@
 }
 .hero-section .hero-section-container .hero-carroussel-container .hero-carroussel-card{
     width: 100%;
+    color: #fff;
 }
 .hero-section .hero-section-container .hero-carroussel-container .hero-carroussel-card h3{
     font-weight: 700;
@@ -245,6 +255,12 @@
     font-size: 13px;
     line-height: 17px;
 }
+.exclusives-shops-section .ess-carroussel-container .ess-carroussel-card .ess-carroussel-card-right .fa-phone-flip{
+    color: var(--main-blue);
+}
+.exclusives-shops-section .ess-carroussel-container .ess-carroussel-card .ess-carroussel-card-right .fa-whatsapp{
+    color: #00e676;
+}
 .exclusives-shops-section .ess-carroussel-container .ess-carroussel-card .ess-carroussel-card-right .contacts-btns a,
 .top-sellers-section .ts-grid-container .ts-grid-card-cont .ts-grid-card .ts-grid-card-right .contacts-btns a{
     color: #000;
@@ -285,7 +301,7 @@
 /* PRODUCTS SECTION START  */
 
 .ps-grid-card{
-    height: 530px;
+    min-height: 530px;
     border: 1px #D9D9D9 solid;
     background-color: #fff;
     border-radius: 7px;
@@ -867,3 +883,32 @@ footer .footer-bottom{
     object-fit:cover;
 }
 /* PROFILE SECTION  STYLING END  */
+
+
+/* PUBLISH SECTION  STYLING START  */
+
+.profile-section .main-profile form .display-images .d-flex{
+    padding-bottom: 20px;
+}
+.profile-section .main-profile form .display-images .d-flex img{
+    cursor:pointer;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 7px;
+    margin-right: 20px;
+}
+.profile-section .main-profile form .display-images .d-flex img.primary{
+    border: 6px solid var(--main-blue);
+}
+
+/* PUBLISH SECTION  STYLING END  */
+
+/* SUBSCRIPTION SECTION STYLING START  */
+
+.main-profile .subscription .card .card-header{
+    background-color: var(--main-blue);
+    color: #fff;
+}
+/* SUBSCRIPTION SECTION STYLING END  */

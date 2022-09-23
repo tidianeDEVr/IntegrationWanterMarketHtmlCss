@@ -173,6 +173,9 @@
         left: -11px;
         background-color: #fff;
     }
+    /* .article-middle p{
+        display: none;
+    } */
 }
 
 @media (max-width:320px) {

@@ -120,16 +120,13 @@
     </div>
     <!-- NAVBAR END -->
     <div class="spacer" ></div>
-    <div class="nav-closer position-absolute d-none">
-      <div></div>
-    </div>
 
     <!-- PROFILE SECTION  START  -->
     <section class="profile-section d-flex">
       <aside class="py-3 dashboard-aside">
         <ul class="mx-3 list-group">
           <label class="mb-1">Page</label>
-          <li><a href="" class="btn text-nowrap btn-primary"><i class="fa-solid fa-gauge"></i><span>Tableau de bord</span></a></li>
+          <li><a href="" class="btn text-nowrap"><i class="fa-solid fa-gauge"></i><span>Tableau de bord</span></a></li>
           <label class="mb-1">Annonces</label>
           <li><a href="" class="btn text-nowrap"><i class="fa-solid fa-upload"></i><span>Publier une annonce</span></a></li>
           <li><a href="" class="btn text-nowrap"><i class="fa-solid fa-list"></i><span>Lister mes annonces</span></a></li>
@@ -139,119 +136,145 @@
           <label class="mb-1">Compte</label>
           <li><a href="" class="btn text-nowrap"><i class="fa-solid fa-user"></i><span>Mon profile</span></a></li>
           <li><a href="" class="btn text-nowrap"><i class="fa-solid fa-money-bills"></i><span>Mes achats</span></a></li>
-          <li><a href="" class="btn text-nowrap"><i class="fa-solid fa-file-invoice"></i><span>Mes abonnements</span></a></li>
+          <li><a href="" class="btn btn-primary text-nowrap"><i class="fa-solid fa-file-invoice"></i><span>Mes abonnements</span></a></li>
           <li><a href="" class="btn text-nowrap"><i class="fa-solid fa-right-from-bracket"></i><span>Deconnexion</span></a></li>
         </ul>
       </aside>
       <div class="main-profile flex-fill p-3">
         <div class="container mb-2 d-flex align-items-center justify-content-between">
           <button type="button" class="btn btn-primary" id="hideAsideBtn"><i class="fas fa-bars"></i></button>
-          <h5 class="text-end">Tableau de bord</h5>
+          <h5 class="text-end">Abonnements</h5>
         </div>
-        <div class="container">
-          <div class="row row-cols-1 row-cols-lg-2">
-            <div class="col mb-3">
-              <div class="card">
-                <div class="card-header card-header d-flex justify-content-between align-items-center">
-                  <span>Informations personnelles </span>
-                  <div class=" btn btn-outline-dark btn-sm">Modifier <i class="fas fa-edit"></i></div>
+        <div class="container subscription">
+          <div class="row">
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <span class="fw-bold">Basic</span>
+                        <span class="fw-bold">100 / FCFA</span>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <span class="fw-bold">Validité : </span> 30 jours
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Nombre de produits : </span> 50
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Catégories : </span> toutes
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Sidebar : </span> 0
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Dealt du jour : </span> 1
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Promo banner : </span> 0
+                            </li>
+                        </ul>
+                        <div class="text-center mt-2">
+                            <button disabled class="w-75 btn btn-primary">
+                                Abonnement actuel
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                  <p>
-                      Nom complet : Cheikh Tidiane Ndiaye<br>
-                      Adresse e-mail : cheikh@xyz.com<br>
-                      Numero telephone : 221 78 123 45 67
-                  </p>
-                </div>
-              </div>
             </div>
-            <div class="col mb-3">
-              <div class="card">
-                <div class="card-header d-flex justify-content-between align-items-center">
-                  <span>Derniers Abonnements </span>
-                  <div class=" btn btn-outline-dark btn-sm">Voir tout <i class="fas fa-list"></i></div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <span class="fw-bold">Gold</span>
+                        <span class="fw-bold">10000 / FCFA</span>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <span class="fw-bold">Validité : </span> 30 jours
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Nombre de produits : </span> 200
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Catégories : </span> toutes
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Sidebar : </span> 5
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Dealt du jour : </span> 5
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Promo banner : </span> 1
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Localisation : </span> Disponible
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Publications sur les reseaux sociaux </span>
+                            </li>
+                        </ul>
+                        <div class="text-center mt-2">
+                            <a href="" class="w-75 btn btn-outline-primary">
+                                Choisir ce plan
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                  <table class="table">
-                      <thead>
-                          <tr>
-                              <th scope="col">N•</th>
-                              <th scope="col">Plan</th>
-                              <th scope="col">Deals</th>
-                              <th scope="col">Annonces</th>
-                              <th scope="col">Jours</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                              <th scope="row">1</th>
-                              <td>Mark</td>
-                              <td>Otto</td>
-                              <td>@mdo</td>
-                              <td>12</td>
-                          </tr>
-                          <tr>
-                              <th scope="row">2</th>
-                              <td>Jacob</td>
-                              <td>Thornton</td>
-                              <td>@fat</td>
-                              <td>12</td>
-                          </tr>
-                      </tbody>
-                  </table>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="row row-cols-1 row-cols-md-2">
-            <div class="col mb-3">
-              <div class="card">
-                <div class="card-header">
-                  Annonces
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <span class="fw-bold">Premium</span>
+                        <span class="fw-bold">1000 / FCFA</span>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <span class="fw-bold">Validité : </span> 30 jours
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Nombre de produits : </span> 100
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Catégories : </span> toutes
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Sidebar : </span> 1
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Dealt du jour : </span> 2
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Promo banner : </span> 0
+                            </li>
+                        </ul>
+                        <div class="text-center mt-2">
+                            <a href="" class="w-75 btn btn-outline-primary">
+                                Choisir ce plan
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                  Vous avez effectué <b>15</b> annonce(s) depuis votre inscription. <a href="" class="">Cliquez-ici </a>pour les lister.
-                </div>
-              </div>
             </div>
-            <div class="col mb-3">
-              <div class="card">
-                <div class="card-header">
-                  Notifications
+            <div class="col-12 mb-3">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <span class="fw-bold">E-commerce</span>
+                        <span class="fw-bold">100000 / FCFA</span>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Commission de 2% sur chaque produit vendu
+                        </p>
+                        <div class="text-center mt-2">
+                            <a href="" class=" btn btn-outline-primary">
+                                Choisir ce plan
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                  <form>
-                      <h6>Je veux recevoir mes notifications : </h6>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                          <label class="form-check-label" for="flexCheckDefault">
-                              Boutique validée ou refusée
-                          </label>
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                          <label class="form-check-label" for="flexCheckChecked">
-                              Abonnement(s) expirant bientôt
-                          </label>
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                          <label class="form-check-label" for="flexCheckChecked">
-                              Annonces mises en ligne
-                          </label>
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                          <label class="form-check-label" for="flexCheckChecked">
-                              Profile modifié
-                          </label>
-                      </div>
-                      <div class="text-end">
-                          <button type="submit" class="btn btn-sm btn-primary">Enregister les modifications</button>
-                      </div>
-                  </form>
-                </div>
-              </div>
             </div>
           </div>
         </div>

@@ -45,11 +45,11 @@
               <div class="main-navbar-top-actions  d-md-block">
                   <div class="d-flex h-100">
                       <button class="btn position-relative">
-                          <i class="fa-regular fa-heart"></i>
+                          <i class="fa-action fa-regular fa-heart"></i>
                           <span class="d-flex justify-content-center align-items-center position-absolute heart-number">0</span>
                       </button>
                       <button class="btn">
-                          <i class="fa-regular fa-user"></i>
+                          <i class="fa-action fa-regular fa-user"></i>
                       </button>
                       <a href="" class="btn">
                           <i class="fa-sharp fa-solid fa-plus"></i>
@@ -122,27 +122,124 @@
     <div class="spacer" ></div>
 
     <!-- PROFILE SECTION  START  -->
-    <section class="profile-section vh-100 d-flex">
-      <aside class="py-3">
+    <section class="profile-section d-flex">
+      <aside class="py-3 dashboard-aside">
         <ul class="mx-3 list-group">
-          <label class="mb-1">Pages</label>
-          <li><a href="" class="btn"><i class="fa-solid fa-gauge"></i><span>Tableau de bord</span></a></li>
+          <label class="mb-1">Page</label>
+          <li><a href="" class="btn text-nowrap"><i class="fa-solid fa-gauge"></i><span>Tableau de bord</span></a></li>
           <label class="mb-1">Annonces</label>
-          <li><a href="" class="btn btn-primary"><i class="fa-solid fa-upload"></i><span>Publier une annonce</span></a></li>
-          <li><a href="" class="btn"><i class="fa-solid fa-list"></i><span>Lister mes annonces</span></a></li>
+          <li><a href="" class="btn btn-primary text-nowrap"><i class="fa-solid fa-upload"></i><span>Publier une annonce</span></a></li>
+          <li><a href="" class="btn text-nowrap"><i class="fa-solid fa-list"></i><span>Lister mes annonces</span></a></li>
           <label class="mb-1">Boutique</label>
-          <li><a href="" class="btn"><i class="fa-solid fa-gear"></i><span>Configurer ma boutique</span></a></li>
-          <li><a href="" class="btn"><i class="fa-solid fa-eye"></i><span>Aperçu de ma boutique</span></a></li>
+          <li><a href="" class="btn text-nowrap text-nowrap"><i class="fa-solid fa-gear"></i><span>Configurer ma boutique</span></a></li>
+          <li><a href="" class="btn text-nowrap"><i class="fa-solid fa-eye"></i><span>Aperçu de ma boutique</span></a></li>
           <label class="mb-1">Compte</label>
-          <li><a href="" class="btn"><i class="fa-solid fa-user"></i><span>Mon profile</span></a></li>
-          <li><a href="" class="btn"><i class="fa-solid fa-money-bills"></i><span>Mes achats</span></a></li>
-          <li><a href="" class="btn"><i class="fa-solid fa-file-invoice"></i><span>Mes abonnements</span></a></li>
-          <li><a href="" class="btn"><i class="fa-solid fa-right-from-bracket"></i><span>Deconnexion</span></a></li>
+          <li><a href="" class="btn text-nowrap"><i class="fa-solid fa-user"></i><span>Mon profile</span></a></li>
+          <li><a href="" class="btn text-nowrap"><i class="fa-solid fa-money-bills"></i><span>Mes achats</span></a></li>
+          <li><a href="" class="btn text-nowrap"><i class="fa-solid fa-file-invoice"></i><span>Mes abonnements</span></a></li>
+          <li><a href="" class="btn text-nowrap"><i class="fa-solid fa-right-from-bracket"></i><span>Deconnexion</span></a></li>
         </ul>
       </aside>
       <div class="main-profile flex-fill p-3">
-        <h5>Publier une annonce</h5>
-        
+        <div class="container mb-2 d-flex align-items-center justify-content-between">
+          <button type="button" class="btn btn-primary" id="hideAsideBtn"><i class="fas fa-bars"></i></button>
+          <h5 class="text-end">Publier une annonce</h5>
+        </div>
+        <div class="container">
+          <form action="" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-12 mb-3">
+                <div class="card">
+                  <div class="card-header">
+                    Téléchargez des photos de votre annonce
+                  </div>
+                  <div class="card-body">
+                    <p>
+                      Une annonce avec une image de qualité obtient plus de visibilité et augmente vos chances de vendre plus rapidement.
+                    </p>
+                    <input class="mb-3 form-control" type="file" id="images" accept="image/png, image/gif, image/jpeg" multiple>
+                    <div class="display-images">
+                      <div class="d-flex"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-header">
+                    Détails de l'annonce
+                  </div>
+                  <div class="card-body">
+                    <p>
+                      Remplissez toutes les informations nécessaires qui rendront votre annonce intéressante et unique.
+                    </p>
+                    <div class="mb-3">
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Nom du produit</label>
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <div class="col">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput">Prix du produit</label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput">En promotion</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                          <label for="floatingTextarea2">Description</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card">
+                  <div class="card-header">
+                    Sélectionnez une catégorie
+                  </div>
+                  <div class="card-body">
+                    <p>
+                      Remplissez toutes les informations nécessaires qui rendront votre annonce intéressante et unique.
+                    </p>
+                    <div class="mb-3 row">
+                      <div class="col">
+                        <label for="exampleInputEmail1" class="form-label">Catégorie</label>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <label for="exampleInputEmail1" class="form-label">Sous-catégorie</label>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=" mt-3">
+              <button type="submit" class="btn btn-primary"> Ajouter le produit</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
     <!-- PROFILE SECTION  END  -->

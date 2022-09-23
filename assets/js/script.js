@@ -36,7 +36,7 @@ $('.ess-carroussel-container').slick({
 }
 );
 
-// Exclusives Shops Carroussel
+// Products Related Carroussel
 $('.products-related-carroussel').slick({
   infinite: true,
   speed: 300,
@@ -141,5 +141,35 @@ $('#hideAsideBtn').click(function(){
   if (sceenSize < 500 ) $('.nav-closer').removeClass('d-none');
 });
 
-// DatePicker
-$('#datepicker').datepicker();
+// Upload Annonce Images
+$("#images").change(function(){
+  $( ".display-images .d-flex" ).html('');
+  var images = $('#images').prop('files');
+  for (var i = 0; i < images.length; i++) {
+    var url = $(this).val();
+    var ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
+    if (images[i] && images[i] && (ext == "gif" || ext == "png" || ext == "jpeg" || ext == "jpg")) {
+      const reader = new FileReader();
+      reader.onload = function() {
+        const img = new Image(150, 150);
+        img.src = reader.result;
+        img.alt = 'annonce'
+        img.className = 'img-annonce'
+        // $( ".display-images .d-flex" ).append(`
+        //   <div class="img-cont"> `+img+`</div>
+        // `);  
+        document.querySelector('.display-images .d-flex').appendChild(img);
+      }
+      reader.readAsDataURL(images[i]); 
+    }
+  }
+});
+
+// Select Principal Image
+// $(".img-annonce").click(function(event){
+//   if ($(".img-annonce").hasClass('primary')){
+//     $(".img-annonce").removeClass('primary')
+//   }else{
+//     $(".img-annonce").addClass('primary')
+//   }
+// });
