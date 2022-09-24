@@ -165,11 +165,37 @@ $("#images").change(function(){
   }
 });
 
-// Select Principal Image
-// $(".img-annonce").click(function(event){
-//   if ($(".img-annonce").hasClass('primary')){
-//     $(".img-annonce").removeClass('primary')
-//   }else{
-//     $(".img-annonce").addClass('primary')
-//   }
-// });
+// Display Menu On Mobile 
+$('#display-menu').click(()=>{
+  if ($('.main-navbar-bottom').hasClass('d-none')) {
+    $('.main-navbar-bottom').removeClass('d-none');
+  }else{
+    $('.main-navbar-bottom').addClass('d-none');
+  }
+});
+
+
+// Products Related Carroussel
+$('.ps-carrossel-home').slick({
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 900,
+  speed: 2000,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 560,
+      settings: {
+        slidesToShow: 2,
+      }
+    }
+  ]
+}
+);

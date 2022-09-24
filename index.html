@@ -21,7 +21,7 @@
 </head>
 <body>
     <!-- NAVBAR START -->
-    <div class="main-navbar mx-auto w-100">
+    <div class="main-navbar mx-auto vw-100">
       <div class="main-navbar-container">
         <div class="main-navbar-top container my-3 my-md-auto mx-2 mx-md-auto mt-sm-1">
           <nav class="row">
@@ -68,6 +68,9 @@
                     <li><a class="dropdown-item" href="#"><img src="assets/images/countries/senegal.svg" alt="pays" id="selectedCountry"></a></li>
                   </ul>
                 </div>
+                <button type="button" class="btn btn-light d-block d-md-none" id="display-menu">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
               </div>
             </div>
           </nav>
@@ -84,7 +87,7 @@
         <!-- Mobile Search End -->
         <hr class="d-none d-md-block mt-1 ">
         <div class="d-none pb-2 d-md-block main-navbar-bottom container">
-          <div class="row">
+          <div class="row mt-3 mt-sm-0">
               <div class="form col col-xl-2 col-lg-3 col-md-6">
               <form>
                   <select name="" id="" class="">
@@ -99,19 +102,19 @@
                       <span>Top Categories :</span>
                       <div class="d-flex align-items-center">
                           <ul class="d-flex m-1">
-                          <li><a href="#">Agro Alimentaire</a></li>
-                          <li><a href="#">Telephone et Tablette</a></li>
-                          <li><a href="#">Electronique</a></li>
-                          <li><a href="#">Automobile</a></li>
-                          <li><a href="#">Mode et Beaute</a></li>
+                            <li><a href="#">Agro Alimentaire</a></li>
+                            <li><a href="#">Telephone et Tablette</a></li>
+                            <li><a href="#">Electronique</a></li>
+                            <li><a href="#">Automobile</a></li>
+                            <li><a href="#">Mode et Beaute</a></li>
                           </ul>
                       </div>
                   </div>
               </div>
               <div class="col col-xl-2 col-lg-3 col-md-6 d-flex justify-content-end">
-                  <a href="" class="btn shop-btn">
-                  <i class="fa-solid fa-house"></i>
-                  <span class="mx-2">Boutiques</span>
+                    <a href="" class="btn shop-btn">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="mx-2">Boutiques</span>
                   </a>
               </div>
           </div>
@@ -402,265 +405,307 @@
           <button type="button" class="btn btn-light">En Promotion</button>
         </div>
       </div>
-      <div class="ps-grid-container mt-3 row row-cols-1 row-cols-md-4 g-4">
-        <div class="ps-grid-card-cont">
+      <div class="ps-grid-container ps-carrossel-home mt-3">
+        <div class="ps-grid-card-cont px-1">
           <div class="ps-grid-card">
-            <div class="ps-grid-card-top position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+            <div class="ps-grid-card-top position-relative">
+              <img class="annonce-img" src="assets/images/annonces/article-1.png">
               <a href="" class="position-absolute">
                 <img src="assets/images/utils/heart.svg" alt="icon">
               </a>
             </div>
             <div class="ps-grid-card-bottom p-2 p-sm-3">
-              <h5 class="mt-1 mt-sm-3">150000 F CFA</h5>
-              <p>
+              <h5 class="m-0">150000 F CFA</h5>
+              <p class="m-0">
                 Article qui tient sur plusieurs lignes
                 par exemple.
               </p>
               <div class="article-infos">
-                <div class="loc-info">
+                <div class="loc-info m-0">
                   <i class="fa-solid fa-location-dot"></i>
-                  <span class="mx-1 mx-sm-2">Dakar, Senegal</span>
-                </div><br>
-                <div class="usr-info">
+                  <span>Dakar, Senegal</span>
+                </div>
+                <div class="usr-info m-0">
                   <i class="fa-solid fa-user"></i>
-                  <span class="mx-1 mx-sm-2">Bamba Ndiaye</span>
-                </div><br>
+                  <span>Bamba Ndiaye</span>
+                </div>
               </div>
               <div class="article-btns d-flex justify-content-between align-items-center">
-                <a href="" class="w-100 btn btn-sm btn-outline-primary">
-                  <i class="fa-solid fa-phone"></i>
-                  <span class="mx-2">Contacter le vendeur</span>
+                <a href="" class="text-start w-100 p-0 py-1 btn btn-sm btn-outline-primary">
+                  <i class="fa-solid fa-phone "></i>
+                  <span >Contacter le vendeur</span>
                 </a>
                 <img src="assets/images/utils/certif.svg" alt="certif">
               </div>
             </div>
           </div>
         </div>
-        <div class="ps-grid-card-cont">
+        <div class="ps-grid-card-cont px-1">
           <div class="ps-grid-card">
-            <div class="ps-grid-card-top position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+            <div class="ps-grid-card-top position-relative">
+              <img class="annonce-img" src="assets/images/annonces/article-1.png">
               <a href="" class="position-absolute">
                 <img src="assets/images/utils/heart.svg" alt="icon">
               </a>
             </div>
             <div class="ps-grid-card-bottom p-2 p-sm-3">
-              <h5 class="mt-1 mt-sm-3">150000 F CFA</h5>
-              <p>
+              <h5 class="m-0">150000 F CFA</h5>
+              <p class="m-0">
                 Article qui tient sur plusieurs lignes
                 par exemple.
               </p>
               <div class="article-infos">
-                <div class="loc-info">
+                <div class="loc-info m-0">
                   <i class="fa-solid fa-location-dot"></i>
-                  <span class="mx-1 mx-sm-2">Dakar, Senegal</span>
-                </div><br>
-                <div class="usr-info">
+                  <span>Dakar, Senegal</span>
+                </div>
+                <div class="usr-info m-0">
                   <i class="fa-solid fa-user"></i>
-                  <span class="mx-1 mx-sm-2">Bamba Ndiaye</span>
-                </div><br>
+                  <span>Bamba Ndiaye</span>
+                </div>
               </div>
               <div class="article-btns d-flex justify-content-between align-items-center">
-                <a href="" class="w-100 btn btn-sm btn-outline-primary">
-                  <i class="fa-solid fa-phone"></i>
-                  <span class="mx-2">Contacter le vendeur</span>
+                <a href="" class="text-start w-100 p-0 py-1 btn btn-sm btn-outline-primary">
+                  <i class="fa-solid fa-phone "></i>
+                  <span >Contacter le vendeur</span>
                 </a>
                 <img src="assets/images/utils/certif.svg" alt="certif">
               </div>
             </div>
           </div>
         </div>
-        <div class="ps-grid-card-cont">
+        <div class="ps-grid-card-cont px-1">
           <div class="ps-grid-card">
-            <div class="ps-grid-card-top position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+            <div class="ps-grid-card-top position-relative">
+              <img class="annonce-img" src="assets/images/annonces/article-1.png">
               <a href="" class="position-absolute">
                 <img src="assets/images/utils/heart.svg" alt="icon">
               </a>
             </div>
             <div class="ps-grid-card-bottom p-2 p-sm-3">
-              <h5 class="mt-1 mt-sm-3">150000 F CFA</h5>
-              <p>
+              <h5 class="m-0">150000 F CFA</h5>
+              <p class="m-0">
                 Article qui tient sur plusieurs lignes
                 par exemple.
               </p>
               <div class="article-infos">
-                <div class="loc-info">
+                <div class="loc-info m-0">
                   <i class="fa-solid fa-location-dot"></i>
-                  <span class="mx-1 mx-sm-2">Dakar, Senegal</span>
-                </div><br>
-                <div class="usr-info">
+                  <span>Dakar, Senegal</span>
+                </div>
+                <div class="usr-info m-0">
                   <i class="fa-solid fa-user"></i>
-                  <span class="mx-1 mx-sm-2">Bamba Ndiaye</span>
-                </div><br>
+                  <span>Bamba Ndiaye</span>
+                </div>
               </div>
               <div class="article-btns d-flex justify-content-between align-items-center">
-                <a href="" class="w-100 btn btn-sm btn-outline-primary">
-                  <i class="fa-solid fa-phone"></i>
-                  <span class="mx-2">Contacter le vendeur</span>
+                <a href="" class="text-start w-100 p-0 py-1 btn btn-sm btn-outline-primary">
+                  <i class="fa-solid fa-phone "></i>
+                  <span >Contacter le vendeur</span>
                 </a>
                 <img src="assets/images/utils/certif.svg" alt="certif">
               </div>
             </div>
           </div>
         </div>
-        <div class="ps-grid-card-cont">
+        <div class="ps-grid-card-cont px-1">
+            <div class="ps-grid-card">
+              <div class="ps-grid-card-top position-relative">
+                <img class="annonce-img" src="assets/images/annonces/article-1.png">
+                <a href="" class="position-absolute">
+                  <img src="assets/images/utils/heart.svg" alt="icon">
+                </a>
+              </div>
+              <div class="ps-grid-card-bottom p-2 p-sm-3">
+                <h5 class="m-0">150000 F CFA</h5>
+                <p class="m-0">
+                  Article qui tient sur plusieurs lignes
+                  par exemple.
+                </p>
+                <div class="article-infos">
+                  <div class="loc-info m-0">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Dakar, Senegal</span>
+                  </div>
+                  <div class="usr-info m-0">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Bamba Ndiaye</span>
+                  </div>
+                </div>
+                <div class="article-btns d-flex justify-content-between align-items-center">
+                  <a href="" class="text-start w-100 p-0 py-1 btn btn-sm btn-outline-primary">
+                    <i class="fa-solid fa-phone "></i>
+                    <span >Contacter le vendeur</span>
+                  </a>
+                  <img src="assets/images/utils/certif.svg" alt="certif">
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="ps-grid-card-cont px-1">
           <div class="ps-grid-card">
-            <div class="ps-grid-card-top position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+            <div class="ps-grid-card-top position-relative">
+              <img class="annonce-img" src="assets/images/annonces/article-1.png">
               <a href="" class="position-absolute">
                 <img src="assets/images/utils/heart.svg" alt="icon">
               </a>
             </div>
             <div class="ps-grid-card-bottom p-2 p-sm-3">
-              <h5 class="mt-1 mt-sm-3">150000 F CFA</h5>
-              <p>
+              <h5 class="m-0">150000 F CFA</h5>
+              <p class="m-0">
                 Article qui tient sur plusieurs lignes
                 par exemple.
               </p>
               <div class="article-infos">
-                <div class="loc-info">
+                <div class="loc-info m-0">
                   <i class="fa-solid fa-location-dot"></i>
-                  <span class="mx-1 mx-sm-2">Dakar, Senegal</span>
-                </div><br>
-                <div class="usr-info">
+                  <span>Dakar, Senegal</span>
+                </div>
+                <div class="usr-info m-0">
                   <i class="fa-solid fa-user"></i>
-                  <span class="mx-1 mx-sm-2">Bamba Ndiaye</span>
-                </div><br>
+                  <span>Bamba Ndiaye</span>
+                </div>
               </div>
               <div class="article-btns d-flex justify-content-between align-items-center">
-                <a href="" class="w-100 btn btn-sm btn-outline-primary">
-                  <i class="fa-solid fa-phone"></i>
-                  <span class="mx-2">Contacter le vendeur</span>
+                <a href="" class="text-start w-100 p-0 py-1 btn btn-sm btn-outline-primary">
+                  <i class="fa-solid fa-phone "></i>
+                  <span >Contacter le vendeur</span>
                 </a>
                 <img src="assets/images/utils/certif.svg" alt="certif">
               </div>
             </div>
           </div>
         </div>
-        <div class="ps-grid-card-cont">
+        <div class="ps-grid-card-cont px-1">
           <div class="ps-grid-card">
-            <div class="ps-grid-card-top position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+            <div class="ps-grid-card-top position-relative">
+              <img class="annonce-img" src="assets/images/annonces/article-1.png">
               <a href="" class="position-absolute">
                 <img src="assets/images/utils/heart.svg" alt="icon">
               </a>
             </div>
             <div class="ps-grid-card-bottom p-2 p-sm-3">
-              <h5 class="mt-1 mt-sm-3">150000 F CFA</h5>
-              <p>
+              <h5 class="m-0">150000 F CFA</h5>
+              <p class="m-0">
                 Article qui tient sur plusieurs lignes
                 par exemple.
               </p>
               <div class="article-infos">
-                <div class="loc-info">
+                <div class="loc-info m-0">
                   <i class="fa-solid fa-location-dot"></i>
-                  <span class="mx-1 mx-sm-2">Dakar, Senegal</span>
-                </div><br>
-                <div class="usr-info">
+                  <span>Dakar, Senegal</span>
+                </div>
+                <div class="usr-info m-0">
                   <i class="fa-solid fa-user"></i>
-                  <span class="mx-1 mx-sm-2">Bamba Ndiaye</span>
-                </div><br>
+                  <span>Bamba Ndiaye</span>
+                </div>
               </div>
               <div class="article-btns d-flex justify-content-between align-items-center">
-                <a href="" class="w-100 btn btn-sm btn-outline-primary">
-                  <i class="fa-solid fa-phone"></i>
-                  <span class="mx-2">Contacter le vendeur</span>
+                <a href="" class="text-start w-100 p-0 py-1 btn btn-sm btn-outline-primary">
+                  <i class="fa-solid fa-phone "></i>
+                  <span >Contacter le vendeur</span>
                 </a>
                 <img src="assets/images/utils/certif.svg" alt="certif">
               </div>
             </div>
           </div>
         </div>
-        <div class="ps-grid-card-cont">
+        <div class="ps-grid-card-cont px-1">
           <div class="ps-grid-card">
-            <div class="ps-grid-card-top position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+            <div class="ps-grid-card-top position-relative">
+              <img class="annonce-img" src="assets/images/annonces/article-1.png">
               <a href="" class="position-absolute">
                 <img src="assets/images/utils/heart.svg" alt="icon">
               </a>
             </div>
             <div class="ps-grid-card-bottom p-2 p-sm-3">
-              <h5 class="mt-1 mt-sm-3">150000 F CFA</h5>
-              <p>
+              <h5 class="m-0">150000 F CFA</h5>
+              <p class="m-0">
                 Article qui tient sur plusieurs lignes
                 par exemple.
               </p>
               <div class="article-infos">
-                <div class="loc-info">
+                <div class="loc-info m-0">
                   <i class="fa-solid fa-location-dot"></i>
-                  <span class="mx-1 mx-sm-2">Dakar, Senegal</span>
-                </div><br>
-                <div class="usr-info">
+                  <span>Dakar, Senegal</span>
+                </div>
+                <div class="usr-info m-0">
                   <i class="fa-solid fa-user"></i>
-                  <span class="mx-1 mx-sm-2">Bamba Ndiaye</span>
-                </div><br>
+                  <span>Bamba Ndiaye</span>
+                </div>
               </div>
               <div class="article-btns d-flex justify-content-between align-items-center">
-                <a href="" class="w-100 btn btn-sm btn-outline-primary">
-                  <i class="fa-solid fa-phone"></i>
-                  <span class="mx-2">Contacter le vendeur</span>
+                <a href="" class="text-start w-100 p-0 py-1 btn btn-sm btn-outline-primary">
+                  <i class="fa-solid fa-phone "></i>
+                  <span >Contacter le vendeur</span>
                 </a>
                 <img src="assets/images/utils/certif.svg" alt="certif">
               </div>
             </div>
           </div>
         </div>
-        <div class="ps-grid-card-cont">
+        <div class="ps-grid-card-cont px-1">
           <div class="ps-grid-card">
-            <div class="ps-grid-card-top position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+            <div class="ps-grid-card-top position-relative">
+              <img class="annonce-img" src="assets/images/annonces/article-1.png">
               <a href="" class="position-absolute">
                 <img src="assets/images/utils/heart.svg" alt="icon">
               </a>
             </div>
             <div class="ps-grid-card-bottom p-2 p-sm-3">
-              <h5 class="mt-1 mt-sm-3">150000 F CFA</h5>
-              <p>
+              <h5 class="m-0">150000 F CFA</h5>
+              <p class="m-0">
                 Article qui tient sur plusieurs lignes
                 par exemple.
               </p>
               <div class="article-infos">
-                <div class="loc-info">
+                <div class="loc-info m-0">
                   <i class="fa-solid fa-location-dot"></i>
-                  <span class="mx-1 mx-sm-2">Dakar, Senegal</span>
-                </div><br>
-                <div class="usr-info">
+                  <span>Dakar, Senegal</span>
+                </div>
+                <div class="usr-info m-0">
                   <i class="fa-solid fa-user"></i>
-                  <span class="mx-1 mx-sm-2">Bamba Ndiaye</span>
-                </div><br>
+                  <span>Bamba Ndiaye</span>
+                </div>
               </div>
               <div class="article-btns d-flex justify-content-between align-items-center">
-                <a href="" class="w-100 btn btn-sm btn-outline-primary">
-                  <i class="fa-solid fa-phone"></i>
-                  <span class="mx-2">Contacter le vendeur</span>
+                <a href="" class="text-start w-100 p-0 py-1 btn btn-sm btn-outline-primary">
+                  <i class="fa-solid fa-phone "></i>
+                  <span >Contacter le vendeur</span>
                 </a>
                 <img src="assets/images/utils/certif.svg" alt="certif">
               </div>
             </div>
           </div>
         </div>
-        <div class="ps-grid-card-cont">
+        <div class="ps-grid-card-cont px-1">
           <div class="ps-grid-card">
-            <div class="ps-grid-card-top position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+            <div class="ps-grid-card-top position-relative">
+              <img class="annonce-img" src="assets/images/annonces/article-1.png">
               <a href="" class="position-absolute">
                 <img src="assets/images/utils/heart.svg" alt="icon">
               </a>
             </div>
             <div class="ps-grid-card-bottom p-2 p-sm-3">
-              <h5 class="mt-1 mt-sm-3">150000 F CFA</h5>
-              <p>
+              <h5 class="m-0">150000 F CFA</h5>
+              <p class="m-0">
                 Article qui tient sur plusieurs lignes
                 par exemple.
               </p>
               <div class="article-infos">
-                <div class="loc-info">
+                <div class="loc-info m-0">
                   <i class="fa-solid fa-location-dot"></i>
-                  <span class="mx-1 mx-sm-2">Dakar, Senegal</span>
-                </div><br>
-                <div class="usr-info">
+                  <span>Dakar, Senegal</span>
+                </div>
+                <div class="usr-info m-0">
                   <i class="fa-solid fa-user"></i>
-                  <span class="mx-1 mx-sm-2">Bamba Ndiaye</span>
-                </div><br>
+                  <span>Bamba Ndiaye</span>
+                </div>
               </div>
               <div class="article-btns d-flex justify-content-between align-items-center">
-                <a href="" class="w-100 btn btn-sm btn-outline-primary">
-                  <i class="fa-solid fa-phone"></i>
-                  <span class="mx-2">Contacter le vendeur</span>
+                <a href="" class="text-start w-100 p-0 py-1 btn btn-sm btn-outline-primary">
+                  <i class="fa-solid fa-phone "></i>
+                  <span >Contacter le vendeur</span>
                 </a>
                 <img src="assets/images/utils/certif.svg" alt="certif">
               </div>
@@ -686,7 +731,7 @@
         <h2>Top Vendeurs</h2>
         <img src="assets/images/utils/blue-line.svg" alt="bar">
       </div>
-      <div class="mb-3 ts-grid-container row row-cols-2 row-cols-md-4 g-3">
+      <div class="mb-3 ts-grid-container row row-cols-2 row-cols-xl-4 g-3">
         <div class="ts-grid-card-cont-cont">
           <div class="ts-grid-card-cont d-flex justify-content-center align-items-center">
             <div class="ts-grid-card row">
@@ -920,46 +965,47 @@
 
     <section class="news-section ">
       <div class="container">
-        <div class="ns-top pt-5 d-flex align-items-center justify-content-between">
+        <div class="ns-top pt-5 d-flex align-items-start justify-content-between">
           <div class="ns-top-left">
             <h2>Nouveautés</h2>
             <img src="assets/images/utils/blue-line.svg" alt="bar">
           </div>
           <div class="ns-top-right">
-            <a href="" class="btn">
+            <a href="" class="text-decoration-none">
               <span>Voir plus</span>
               <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>
-        <div class="ps-grid-container mt-3 row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+        <div class="ps-grid-container mt-3 row row-cols-2 row-cols-md-3 row-cols-lg-4 g-1">
           <div class="ps-grid-card-cont">
             <div class="ps-grid-card">
-              <div class="ps-grid-card-top position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+              <div class="ps-grid-card-top position-relative">
+                <img class="annonce-img" src="assets/images/annonces/article-1.png">
                 <a href="" class="position-absolute">
                   <img src="assets/images/utils/heart.svg" alt="icon">
                 </a>
               </div>
               <div class="ps-grid-card-bottom p-2 p-sm-3">
-                <h5 class="mt-1 mt-sm-3">150000 F CFA</h5>
-                <p>
+                <h5 class="m-0">150000 F CFA</h5>
+                <p class="m-0">
                   Article qui tient sur plusieurs lignes
                   par exemple.
                 </p>
                 <div class="article-infos">
-                  <div class="loc-info">
+                  <div class="loc-info m-0">
                     <i class="fa-solid fa-location-dot"></i>
-                    <span class="mx-1 mx-sm-2">Dakar, Senegal</span>
-                  </div><br>
-                  <div class="usr-info">
+                    <span>Dakar, Senegal</span>
+                  </div>
+                  <div class="usr-info m-0">
                     <i class="fa-solid fa-user"></i>
-                    <span class="mx-1 mx-sm-2">Bamba Ndiaye</span>
-                  </div><br>
+                    <span>Bamba Ndiaye</span>
+                  </div>
                 </div>
                 <div class="article-btns d-flex justify-content-between align-items-center">
-                  <a href="" class="w-100 btn btn-sm btn-outline-primary">
-                    <i class="fa-solid fa-phone"></i>
-                    <span class="mx-2">Contacter le vendeur</span>
+                  <a href="" class="text-start w-100 p-0 py-1 btn btn-sm btn-outline-primary">
+                    <i class="fa-solid fa-phone "></i>
+                    <span >Contacter le vendeur</span>
                   </a>
                   <img src="assets/images/utils/certif.svg" alt="certif">
                 </div>
@@ -968,31 +1014,32 @@
           </div>
           <div class="ps-grid-card-cont">
             <div class="ps-grid-card">
-              <div class="ps-grid-card-top position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+              <div class="ps-grid-card-top position-relative">
+                <img class="annonce-img" src="assets/images/annonces/article-1.png">
                 <a href="" class="position-absolute">
                   <img src="assets/images/utils/heart.svg" alt="icon">
                 </a>
               </div>
               <div class="ps-grid-card-bottom p-2 p-sm-3">
-                <h5 class="mt-1 mt-sm-3">150000 F CFA</h5>
-                <p>
+                <h5 class="m-0">150000 F CFA</h5>
+                <p class="m-0">
                   Article qui tient sur plusieurs lignes
                   par exemple.
                 </p>
                 <div class="article-infos">
-                  <div class="loc-info">
+                  <div class="loc-info m-0">
                     <i class="fa-solid fa-location-dot"></i>
-                    <span class="mx-1 mx-sm-2">Dakar, Senegal</span>
-                  </div><br>
-                  <div class="usr-info">
+                    <span>Dakar, Senegal</span>
+                  </div>
+                  <div class="usr-info m-0">
                     <i class="fa-solid fa-user"></i>
-                    <span class="mx-1 mx-sm-2">Bamba Ndiaye</span>
-                  </div><br>
+                    <span>Bamba Ndiaye</span>
+                  </div>
                 </div>
                 <div class="article-btns d-flex justify-content-between align-items-center">
-                  <a href="" class="w-100 btn btn-sm btn-outline-primary">
-                    <i class="fa-solid fa-phone"></i>
-                    <span class="mx-2">Contacter le vendeur</span>
+                  <a href="" class="text-start w-100 p-0 py-1 btn btn-sm btn-outline-primary">
+                    <i class="fa-solid fa-phone "></i>
+                    <span >Contacter le vendeur</span>
                   </a>
                   <img src="assets/images/utils/certif.svg" alt="certif">
                 </div>
@@ -1001,31 +1048,32 @@
           </div>
           <div class="ps-grid-card-cont">
             <div class="ps-grid-card">
-              <div class="ps-grid-card-top position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+              <div class="ps-grid-card-top position-relative">
+                <img class="annonce-img" src="assets/images/annonces/article-1.png">
                 <a href="" class="position-absolute">
                   <img src="assets/images/utils/heart.svg" alt="icon">
                 </a>
               </div>
               <div class="ps-grid-card-bottom p-2 p-sm-3">
-                <h5 class="mt-1 mt-sm-3">150000 F CFA</h5>
-                <p>
+                <h5 class="m-0">150000 F CFA</h5>
+                <p class="m-0">
                   Article qui tient sur plusieurs lignes
                   par exemple.
                 </p>
                 <div class="article-infos">
-                  <div class="loc-info">
+                  <div class="loc-info m-0">
                     <i class="fa-solid fa-location-dot"></i>
-                    <span class="mx-1 mx-sm-2">Dakar, Senegal</span>
-                  </div><br>
-                  <div class="usr-info">
+                    <span>Dakar, Senegal</span>
+                  </div>
+                  <div class="usr-info m-0">
                     <i class="fa-solid fa-user"></i>
-                    <span class="mx-1 mx-sm-2">Bamba Ndiaye</span>
-                  </div><br>
+                    <span>Bamba Ndiaye</span>
+                  </div>
                 </div>
                 <div class="article-btns d-flex justify-content-between align-items-center">
-                  <a href="" class="w-100 btn btn-sm btn-outline-primary">
-                    <i class="fa-solid fa-phone"></i>
-                    <span class="mx-2">Contacter le vendeur</span>
+                  <a href="" class="text-start w-100 p-0 py-1 btn btn-sm btn-outline-primary">
+                    <i class="fa-solid fa-phone "></i>
+                    <span >Contacter le vendeur</span>
                   </a>
                   <img src="assets/images/utils/certif.svg" alt="certif">
                 </div>
@@ -1034,31 +1082,32 @@
           </div>
           <div class="ps-grid-card-cont">
             <div class="ps-grid-card">
-              <div class="ps-grid-card-top position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+              <div class="ps-grid-card-top position-relative">
+                <img class="annonce-img" src="assets/images/annonces/article-1.png">
                 <a href="" class="position-absolute">
                   <img src="assets/images/utils/heart.svg" alt="icon">
                 </a>
               </div>
               <div class="ps-grid-card-bottom p-2 p-sm-3">
-                <h5 class="mt-1 mt-sm-3">150000 F CFA</h5>
-                <p>
+                <h5 class="m-0">150000 F CFA</h5>
+                <p class="m-0">
                   Article qui tient sur plusieurs lignes
                   par exemple.
                 </p>
                 <div class="article-infos">
-                  <div class="loc-info">
+                  <div class="loc-info m-0">
                     <i class="fa-solid fa-location-dot"></i>
-                    <span class="mx-1 mx-sm-2">Dakar, Senegal</span>
-                  </div><br>
-                  <div class="usr-info">
+                    <span>Dakar, Senegal</span>
+                  </div>
+                  <div class="usr-info m-0">
                     <i class="fa-solid fa-user"></i>
-                    <span class="mx-1 mx-sm-2">Bamba Ndiaye</span>
-                  </div><br>
+                    <span>Bamba Ndiaye</span>
+                  </div>
                 </div>
                 <div class="article-btns d-flex justify-content-between align-items-center">
-                  <a href="" class="w-100 btn btn-sm btn-outline-primary">
-                    <i class="fa-solid fa-phone"></i>
-                    <span class="mx-2">Contacter le vendeur</span>
+                  <a href="" class="text-start w-100 p-0 py-1 btn btn-sm btn-outline-primary">
+                    <i class="fa-solid fa-phone "></i>
+                    <span >Contacter le vendeur</span>
                   </a>
                   <img src="assets/images/utils/certif.svg" alt="certif">
                 </div>
@@ -1067,31 +1116,32 @@
           </div>
           <div class="ps-grid-card-cont">
             <div class="ps-grid-card">
-              <div class="ps-grid-card-top position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+              <div class="ps-grid-card-top position-relative">
+                <img class="annonce-img" src="assets/images/annonces/article-1.png">
                 <a href="" class="position-absolute">
                   <img src="assets/images/utils/heart.svg" alt="icon">
                 </a>
               </div>
               <div class="ps-grid-card-bottom p-2 p-sm-3">
-                <h5 class="mt-1 mt-sm-3">150000 F CFA</h5>
-                <p>
+                <h5 class="m-0">150000 F CFA</h5>
+                <p class="m-0">
                   Article qui tient sur plusieurs lignes
                   par exemple.
                 </p>
                 <div class="article-infos">
-                  <div class="loc-info">
+                  <div class="loc-info m-0">
                     <i class="fa-solid fa-location-dot"></i>
-                    <span class="mx-1 mx-sm-2">Dakar, Senegal</span>
-                  </div><br>
-                  <div class="usr-info">
+                    <span>Dakar, Senegal</span>
+                  </div>
+                  <div class="usr-info m-0">
                     <i class="fa-solid fa-user"></i>
-                    <span class="mx-1 mx-sm-2">Bamba Ndiaye</span>
-                  </div><br>
+                    <span>Bamba Ndiaye</span>
+                  </div>
                 </div>
                 <div class="article-btns d-flex justify-content-between align-items-center">
-                  <a href="" class="w-100 btn btn-sm btn-outline-primary">
-                    <i class="fa-solid fa-phone"></i>
-                    <span class="mx-2">Contacter le vendeur</span>
+                  <a href="" class="text-start w-100 p-0 py-1 btn btn-sm btn-outline-primary">
+                    <i class="fa-solid fa-phone "></i>
+                    <span >Contacter le vendeur</span>
                   </a>
                   <img src="assets/images/utils/certif.svg" alt="certif">
                 </div>
@@ -1100,31 +1150,32 @@
           </div>
           <div class="ps-grid-card-cont">
             <div class="ps-grid-card">
-              <div class="ps-grid-card-top position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+              <div class="ps-grid-card-top position-relative">
+                <img class="annonce-img" src="assets/images/annonces/article-1.png">
                 <a href="" class="position-absolute">
                   <img src="assets/images/utils/heart.svg" alt="icon">
                 </a>
               </div>
               <div class="ps-grid-card-bottom p-2 p-sm-3">
-                <h5 class="mt-1 mt-sm-3">150000 F CFA</h5>
-                <p>
+                <h5 class="m-0">150000 F CFA</h5>
+                <p class="m-0">
                   Article qui tient sur plusieurs lignes
                   par exemple.
                 </p>
                 <div class="article-infos">
-                  <div class="loc-info">
+                  <div class="loc-info m-0">
                     <i class="fa-solid fa-location-dot"></i>
-                    <span class="mx-1 mx-sm-2">Dakar, Senegal</span>
-                  </div><br>
-                  <div class="usr-info">
+                    <span>Dakar, Senegal</span>
+                  </div>
+                  <div class="usr-info m-0">
                     <i class="fa-solid fa-user"></i>
-                    <span class="mx-1 mx-sm-2">Bamba Ndiaye</span>
-                  </div><br>
+                    <span>Bamba Ndiaye</span>
+                  </div>
                 </div>
                 <div class="article-btns d-flex justify-content-between align-items-center">
-                  <a href="" class="w-100 btn btn-sm btn-outline-primary">
-                    <i class="fa-solid fa-phone"></i>
-                    <span class="mx-2">Contacter le vendeur</span>
+                  <a href="" class="text-start w-100 p-0 py-1 btn btn-sm btn-outline-primary">
+                    <i class="fa-solid fa-phone "></i>
+                    <span >Contacter le vendeur</span>
                   </a>
                   <img src="assets/images/utils/certif.svg" alt="certif">
                 </div>
@@ -1133,31 +1184,32 @@
           </div>
           <div class="ps-grid-card-cont">
             <div class="ps-grid-card">
-              <div class="ps-grid-card-top position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
+              <div class="ps-grid-card-top position-relative">
+                <img class="annonce-img" src="assets/images/annonces/article-1.png">
                 <a href="" class="position-absolute">
                   <img src="assets/images/utils/heart.svg" alt="icon">
                 </a>
               </div>
               <div class="ps-grid-card-bottom p-2 p-sm-3">
-                <h5 class="mt-1 mt-sm-3">150000 F CFA</h5>
-                <p>
+                <h5 class="m-0">150000 F CFA</h5>
+                <p class="m-0">
                   Article qui tient sur plusieurs lignes
                   par exemple.
                 </p>
                 <div class="article-infos">
-                  <div class="loc-info">
+                  <div class="loc-info m-0">
                     <i class="fa-solid fa-location-dot"></i>
-                    <span class="mx-1 mx-sm-2">Dakar, Senegal</span>
-                  </div><br>
-                  <div class="usr-info">
+                    <span>Dakar, Senegal</span>
+                  </div>
+                  <div class="usr-info m-0">
                     <i class="fa-solid fa-user"></i>
-                    <span class="mx-1 mx-sm-2">Bamba Ndiaye</span>
-                  </div><br>
+                    <span>Bamba Ndiaye</span>
+                  </div>
                 </div>
                 <div class="article-btns d-flex justify-content-between align-items-center">
-                  <a href="" class="w-100 btn btn-sm btn-outline-primary">
-                    <i class="fa-solid fa-phone"></i>
-                    <span class="mx-2">Contacter le vendeur</span>
+                  <a href="" class="text-start w-100 p-0 py-1 btn btn-sm btn-outline-primary">
+                    <i class="fa-solid fa-phone "></i>
+                    <span >Contacter le vendeur</span>
                   </a>
                   <img src="assets/images/utils/certif.svg" alt="certif">
                 </div>
@@ -1165,38 +1217,39 @@
             </div>
           </div>
           <div class="ps-grid-card-cont">
-          <div class="ps-grid-card">
-            <div class="ps-grid-card-top position-relative" style="background-image: url(assets/images/annonces/article-1.png);">
-              <a href="" class="position-absolute">
-                <img src="assets/images/utils/heart.svg" alt="icon">
-              </a>
-            </div>
-            <div class="ps-grid-card-bottom p-2 p-sm-3">
-              <h5 class="mt-1 mt-sm-3">150000 F CFA</h5>
-              <p>
-                Article qui tient sur plusieurs lignes
-                par exemple.
-              </p>
-              <div class="article-infos">
-                <div class="loc-info">
-                  <i class="fa-solid fa-location-dot"></i>
-                  <span class="mx-1 mx-sm-2">Dakar, Senegal</span>
-                </div><br>
-                <div class="usr-info">
-                  <i class="fa-solid fa-user"></i>
-                  <span class="mx-1 mx-sm-2">Bamba Ndiaye</span>
-                </div><br>
-              </div>
-              <div class="article-btns d-flex justify-content-between align-items-center">
-                <a href="" class="w-100 btn btn-sm btn-outline-primary">
-                  <i class="fa-solid fa-phone"></i>
-                  <span class="mx-2">Contacter le vendeur</span>
+            <div class="ps-grid-card">
+              <div class="ps-grid-card-top position-relative">
+                <img class="annonce-img" src="assets/images/annonces/article-1.png">
+                <a href="" class="position-absolute">
+                  <img src="assets/images/utils/heart.svg" alt="icon">
                 </a>
-                <img src="assets/images/utils/certif.svg" alt="certif">
+              </div>
+              <div class="ps-grid-card-bottom p-2 p-sm-3">
+                <h5 class="m-0">150000 F CFA</h5>
+                <p class="m-0">
+                  Article qui tient sur plusieurs lignes
+                  par exemple.
+                </p>
+                <div class="article-infos">
+                  <div class="loc-info m-0">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Dakar, Senegal</span>
+                  </div>
+                  <div class="usr-info m-0">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Bamba Ndiaye</span>
+                  </div>
+                </div>
+                <div class="article-btns d-flex justify-content-between align-items-center">
+                  <a href="" class="text-start w-100 p-0 py-1 btn btn-sm btn-outline-primary">
+                    <i class="fa-solid fa-phone "></i>
+                    <span >Contacter le vendeur</span>
+                  </a>
+                  <img src="assets/images/utils/certif.svg" alt="certif">
+                </div>
               </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
       <div class="text-center">

@@ -107,16 +107,6 @@
     footer .footer-bottom-cont{
         font-size: 8px;
     }
-    .ps-grid-card{
-        height: 440px;
-        /* height: 450px; */
-    }
-    .ps-grid-card .ps-grid-card-top{
-        height: 60% !important;
-    }
-    .ps-grid-card .ps-grid-card-bottom{
-        height: 40% !important;
-    }
     .ps-grid-card .ps-grid-card-bottom p{
         font-size: 13px;
     }
@@ -129,7 +119,7 @@
         font-size: 18px;
     }
     .ps-grid-card .ps-grid-card-bottom .article-infos{
-        height: 60px;
+        margin-bottom: 15px ;
     }
     .ps-grid-card .ps-grid-card-bottom .article-infos span{
         font-size: 14px;
@@ -173,9 +163,13 @@
         left: -11px;
         background-color: #fff;
     }
-    /* .article-middle p{
-        display: none;
-    } */
+    .ps-grid-card .ps-grid-card-bottom .article-btns a span{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .ps-grid-card .ps-grid-card-bottom .article-btns a i{
+        margin: 0 2.5px ;
+    }
 }
 
 @media (max-width:320px) {
