@@ -194,7 +194,7 @@ $('.ps-carrossel-home').slick({
       }
     },
     {
-      breakpoint: 560,
+      breakpoint: 764,
       settings: {
         slidesToShow: 2,
       }

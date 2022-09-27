@@ -677,6 +677,13 @@ footer .footer-bottom{
     background-color: #06d370;
     border: #06d370;
 }
+.aside-btns-cont a i{
+    color: #fff;
+}
+.aside-btns-cont .fa-user-plus{
+    color: var(--main-blue);
+}
+
 .details-vendeur{
     background-color: #fff;
     z-index: 99;
@@ -928,4 +935,5 @@ footer .footer-bottom{
     background-color: var(--main-blue);
     color: #fff;
 }
+
 /* SUBSCRIPTION SECTION STYLING END  */
