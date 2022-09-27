@@ -133,7 +133,7 @@
                     <p class="px-5"><i class="fa-solid fa-location-dot"></i> <span>Fass Paillotte en face de la mosquee qui est à l’angle là.</span></p>
                     <p class="px-5"><i class="fa-solid fa-user"></i> <span>Membre depuis Mars 2022</span></p>
                     <div class="">
-                      <a href="" class="d-block d-sm-none btn btn-primary btn-sm btn-details-vendeur">Details du vendeur</a>
+                      <button type="button" class="w-100 d-block  btn btn-primary btn-sm btn-details-vendeur">Details du vendeur</button>
                     </div>
                 </div>
             </div>
@@ -448,46 +448,53 @@
                     </div>
                 </div>
                 <aside class="col-3 d-none d-lg-block ">
-                    <div class="aside-cont px-4">
-                        <h4>Details de la boutique</h4>
-                        <hr>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi ipsum faucibus vitae aliquet. Velit sed ullamcorper morbi tincidunt ornare massa eget egestas.
-                        </p>
-                        <div class="d-flex">
-                            <div class="d-flex justify-content-between">
-                                <a href="" class="btn btn-primary fb"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="" class="btn btn-primary tw"><i class="fa-brands fa-twitter"></i></a>
-                            </div>
-                            <button href="" class="mx-2 btn btn-sm btn-primary btn-details-vendeur">Details du vendeur</button>
+                  <div class="aside-cont px-4">
+                    <h4>Details de la boutique</h4>
+                    <hr>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi ipsum faucibus vitae aliquet. Velit sed ullamcorper morbi tincidunt ornare massa eget egestas.
+                    </p>
+                    <div class="d-flex">
+                        <div class="d-flex justify-content-between">
+                            <a href="" class="btn btn-primary fb"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="" class="btn btn-primary tw"><i class="fa-brands fa-twitter"></i></a>
                         </div>
+                        <button class="mx-2 btn btn-sm btn-primary btn-details-vendeur" type="button">Details du vendeur</button>
                     </div>
-                    <div class="aside-btns-cont mt-4 px-4">
-                        <a href="" class="btn btn-primary mb-2 w-100"><i class="fa-solid fa-phone"></i><span class="mx-2"> Telephone</span></a>
-                        <a href="" class="btn btn-success wh mb-2 w-100"><i class="fa-brands fa-whatsapp"></i><span class="mx-2"> Whatsapp</span></a>
-                        <a href="" class="btn btn-dark mb-2 w-100"><i class="fa-solid fa-location-dot"></i><span class="mx-2"> Localisation</span></a>
-                        <a href="" class="btn btn-outline-primary mb-2 w-100"><i class="fa-solid fa-user-plus"></i><span class="mx-2"> S’abonner</span></a>
-                    </div>
+                  </div>
+                  <div class="aside-btns-cont mt-4 px-4">
+                    <a href="" class="btn btn-primary mb-2 w-100"><i class="fa-solid fa-phone"></i><span class="mx-2"> Telephone</span></a>
+                    <a href="" class="btn btn-success wh mb-2 w-100"><i class="fa-brands fa-whatsapp"></i><span class="mx-2"> Whatsapp</span></a>
+                    <a href="" class="btn btn-dark mb-2 w-100"><i class="fa-solid fa-location-dot"></i><span class="mx-2"> Localisation</span></a>
+                    <a href="" class="btn btn-outline-primary mb-2 w-100"><i class="fa-solid fa-user-plus"></i><span class="mx-2"> S’abonner</span></a>
+                  </div>
                 </aside>
                 <div class="d-none details-vendeur position-fixed">
-                  <div class="container pt-2">
-                    <h3>Coordonnees :</h3>
-                    <ul>
-                      <li><i class="fa-solid fa-user"></i> <span>Nom complet</span></li>
-                      <li><i class="fa-solid fa-envelope"></i> <span>adress@xyz.com</span></li>
-                      <li><i class="fa-solid fa-phone"></i> <span>781234567</span></li>
-                      <li><i class="fa-solid fa-location-dot"></i> <span>Avenue lamine gueye</span></li>
-                      <li>
-                        <span>Note : </span>
-                        <div class="d-flex">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
+                  <div class="mx-auto w-50">
+                    <div class="container pt-2">
+                      <h3>Coordonnees :</h3><hr>
+                      <div class="d-flex">
+                        <div class="avatar-cont">
+                          <img class="img-thumbnail" src="assets/images/identity/logo.png" alt="avatart">
                         </div>
-                      </li>
-                    </ul>
+                        <p class="fw-bold mt-2 mx-3">Cheikh Tidiane Ndiaye</p>
+                      </div>
+                      <ul>
+                        <li><i class="fa-solid fa-envelope"></i> <span>adress@xyz.com</span></li>
+                        <li><i class="fa-solid fa-phone"></i> <span>781234567</span></li>
+                        <li><i class="fa-solid fa-location-dot"></i> <span>Avenue lamine gueye</span></li>
+                        <li class="d-flex">
+                          <span>Note : </span>
+                          <div class="d-flex mx-2 mt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
             </div>

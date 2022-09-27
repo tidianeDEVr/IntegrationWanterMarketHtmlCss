@@ -41,6 +41,10 @@
     padding: 0 20% 0 0 !important ;
 }
 
+.blue-bar{
+    margin-top: -25px ;
+}
+
 /*  GENERAL STYLING END */
 
 /* NAVBAR STYLING START */
@@ -254,10 +258,12 @@
     font-size: 13px;
     line-height: 17px;
 }
-.exclusives-shops-section .ess-carroussel-container .ess-carroussel-card .ess-carroussel-card-right .fa-phone-flip{
+.exclusives-shops-section .ess-carroussel-container .ess-carroussel-card .ess-carroussel-card-right .fa-phone-flip,
+.ts-grid-card-right .contacts-btns .fa-phone-flip {
     color: var(--main-blue);
 }
-.exclusives-shops-section .ess-carroussel-container .ess-carroussel-card .ess-carroussel-card-right .fa-whatsapp{
+.exclusives-shops-section .ess-carroussel-container .ess-carroussel-card .ess-carroussel-card-right .fa-whatsapp,
+.ts-grid-card-right .contacts-btns .fa-whatsapp{
     color: #00e676;
 }
 .exclusives-shops-section .ess-carroussel-container .ess-carroussel-card .ess-carroussel-card-right .contacts-btns a,
@@ -329,7 +335,7 @@
 }
 .ps-grid-card .ps-grid-card-bottom p{
     font-weight: 600;
-    font-size: 15px;
+    font-size: 13px;
 }
 .ps-grid-card .ps-grid-card-bottom .article-infos{
     margin: 10px 0;
@@ -354,12 +360,8 @@
     background-color: #F5F5F5;
     border-radius: 7px;
 }
-.ps-grid-card .ps-grid-card-bottom .article-btns a span{
-    font-size: 10px;
-    font-weight: bold;
-}
 .ps-grid-card .ps-grid-card-bottom .article-btns a i{
-    margin: 0 2.5px ;
+    margin: 0 7px ;
 }
 
 /* PRODUCTS SECTION END  */
@@ -678,15 +680,16 @@ footer .footer-bottom{
 .details-vendeur{
     background-color: #fff;
     z-index: 99;
-    height: 200px;
     width: 100vw;
     bottom: 0;
     left: 0;
 
 }
 .details-vendeur .container h3{
-    color: var(--main-blue);
-    font-size: 20px;
+    font-size: 17px;
+}
+.details-vendeur .d-flex .avatar-cont{
+    width: 50px;
 }
 .details-vendeur .container ul{
     padding: 0;
@@ -770,9 +773,12 @@ footer .footer-bottom{
 .single-product-section .container .row aside{
     z-index: 15;
 }
+.single-product-section .container .row aside .aside-cont{
+    max-width: 450px;
+}
 .single-product-section .container .row aside .aside-cont h2{
     background-color: var(--main-blue);
-    width: 100%;
+    /* width: 100%; */
     padding:  10px 0;
     border-radius: 7px;
     color: #fff;
@@ -812,7 +818,6 @@ footer .footer-bottom{
 }
 .aside-poster img{
     width: 100%;
-    /* height: 100%; */
     object-fit: cover;
     overflow: hidden;
 }
@@ -827,9 +832,11 @@ footer .footer-bottom{
     font-size: 20px;
 }
 .related-products .btns a{
-    padding:  6px;
     background-color: var(--main-blue);
-    border-radius: 7px;
+    border-radius: 4px;
+}
+.related-products .btns a i{ 
+    padding:  6px;
 }
 /* SINGLE PRODUCT SECTION STYLING START  */
 

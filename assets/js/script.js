@@ -1,5 +1,6 @@
 // Hero Carroussel
 $('.hero-carroussel-container').slick({
+    autoplay: true,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
@@ -11,6 +12,7 @@ $('.hero-carroussel-container').slick({
 
 // Exclusives Shops Carroussel
 $('.ess-carroussel-container').slick({
+  autoplay: true,
   infinite: true,
   speed: 300,
   slidesToShow: 3,
@@ -38,6 +40,7 @@ $('.ess-carroussel-container').slick({
 
 // Products Related Carroussel
 $('.products-related-carroussel').slick({
+  autoplay: true,
   infinite: true,
   speed: 300,
   slidesToShow: 3,
