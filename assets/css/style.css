@@ -899,11 +899,10 @@ footer .footer-bottom{
     color: #666666;
     font-size: 15px;
 }
-.profile-section .main-profile .text-center img{
-    width: 100px;
-    height: 100px;
+.profile-section .main-profile .avatar-cont img{
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    margin-bottom: 10px;
     overflow: hidden;
     object-fit:cover;
 }
@@ -937,4 +936,22 @@ footer .footer-bottom{
     color: #fff;
 }
 
+.main-profile .card-body .cbi-divider{
+    border-right: #000 1px solid;
+}
+
+.main-profile .card-body .card-body-infos{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin:0  20px ;
+    padding:  20px ;
+}
+
+.main-profile .card-body #placeholder-cover-picture,
+.main-profile .card-body #placeholder-profile-picture{
+    max-height: 200px;
+    border-radius: 7px;
+    cursor: pointer;
+    object-fit: cover;
+    overflow: hidden;
+}
 /* SUBSCRIPTION SECTION STYLING END  */

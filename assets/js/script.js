@@ -158,9 +158,6 @@ $("#images").change(function(){
         img.src = reader.result;
         img.alt = 'annonce'
         img.className = 'img-annonce'
-        // $( ".display-images .d-flex" ).append(`
-        //   <div class="img-cont"> `+img+`</div>
-        // `);  
         document.querySelector('.display-images .d-flex').appendChild(img);
       }
       reader.readAsDataURL(images[i]); 
@@ -202,3 +199,41 @@ $('.ps-carrossel-home').slick({
   ]
 }
 );
+
+// Change Cover Picture
+$(function() {
+  $('#cover-picture').change(function() {
+      var input = this;
+      var url = $(this).val();
+      var ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
+      if (input.files && input.files[0] && (ext == "gif" || ext == "png" || ext == "jpeg" || ext == "jpg")) {
+          var reader = new FileReader();
+
+          reader.onload = function(e) {
+              $('#placeholder-cover-picture').attr('src', e.target.result);
+          }
+          reader.readAsDataURL(input.files[0]);
+      } else {
+          $('#placeholder-cover-picture').attr('src', 'https://placeholder.pics/svg/1000x300/DEDEDE/555555/Image%20de%20couverture');
+      }
+  });
+});
+
+// Change Profile Picture
+$(function() {
+  $('#profile-picture').change(function() {
+      var input = this;
+      var url = $(this).val();
+      var ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
+      if (input.files && input.files[0] && (ext == "gif" || ext == "png" || ext == "jpeg" || ext == "jpg")) {
+          var reader = new FileReader();
+
+          reader.onload = function(e) {
+              $('#placeholder-profile-picture').attr('src', e.target.result);
+          }
+          reader.readAsDataURL(input.files[0]);
+      } else {
+          $('#placeholder-profile-picture').attr('src', 'https://placeholder.pics/svg/1000x300/DEDEDE/555555/Image%20de%20profile');
+      }
+  });
+});

@@ -147,178 +147,64 @@
       <div class="main-profile flex-fill p-3">
         <div class="container mb-2 d-flex align-items-center justify-content-between">
           <button type="button" class="btn btn-primary" id="hideAsideBtn"><i class="fas fa-bars"></i></button>
-          <h5 class="text-end">Votre profile</h5>
+          <h5 class="text-end">Editer votre boutique</h5>
         </div>
-        <div class="container mb-3">
-          <div class="row">
-            <div class="col col-12 col-md-5 mb-3">
-              <div class="card">
-                <div class="card-header">Avatar</div>
-                <div class="card-body ">
-                  <div class="avatar-cont">
-                    <div class="mb-4 mt-2 d-flex ">
-                      <img id="avatarImgDisplay" src="assets/images/utils/user-default.png" alt="user">
-                      <div class="avatar-infos mx-3">
-                        <span class="fw-bold">Tidiane Ndiaye</span><br>
-                        <span>Sénégal</span><br>
-                        <span>Dakar</span>
+        <div class="container">
+          <form enctype="multipart/form-data" class="needs-validaton" novalidate></form>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="card">
+                  <div class="card-header">Photos de la boutique </div>
+                  <div class="card-body">
+                      <div class="mb-3 w-100">
+                        <label for="cover-picture" class="fw-bold w-100">Photo de couverture<br>
+                          <img src="https://placeholder.pics/svg/1000x300/DEDEDE/555555/Image%20de%20couverture" class="w-100" id="placeholder-cover-picture" alt="image" for="cover-picture">
+                        </label>
+                        <input type="file" hidden id="cover-picture">
+                      </div>
+                      <div class="mb-3">
+                        <div class="mx-auto">
+                          <label for="profile-picture" class="fw-bold w-50">Photo de profile<br>
+                            <img src="https://placeholder.pics/svg/500x300/DEDEDE/555555/Image%20de%20couverture" class="w-100" id="placeholder-profile-picture" alt="image" for="profile-picture">
+                          </label>
+                          <input type="file" hidden id="profile-picture">
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card">
+                  <div class="card-header">Informations de la boutique </div>
+                  <div class="card-body">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Nom Boutique</label>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput">Latitude</label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput">Longitude</label>
+                        </div>
                       </div>
                     </div>
-                    
-                    <div class="d-flex">
-                      <button type="button" class="btn-sm w-50 btn btn-primary">Editer Profile</button>
-                      <button type="button" class="w-50  btn-sm mx-2 btn btn-primary">Editer Boutique</button>
+                    <div class="form-floating">
+                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+                      <label for="floatingTextarea2">Biographie</label>
                     </div>
+                    <button type="submit" class="btn  btn-primary mt-3">Valider les modifications</button>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col col-12 col-md-7 mb-3">
-              <div class="card">
-                <div class="card-header">Informations de bases</div>
-                <div class="card-body">
-                  <form class="needs-validation" novalidate>
-                    <div class="row">
-                      <div class="col">
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Nom</label>
-                          <input type="text" value="Ndiaye" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Prénom</label>
-                          <input type="text" value="Cheikh Tidiane" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-                        </div>
-                      </div>  
-                    </div>
-                    <div class="row">
-                      <div class="col">
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Adresse e-mail</label>
-                          <input type="email" value="cheikh@xyz.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Téléphone</label>
-                          <input type="email" value="cheikh@xyz.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col">
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Genre</label>
-                          <select class="form-select mb-3" aria-label="Default select example">
-                            <option>Homme</option>
-                            <option>Femme</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Date de naissance</label>
-                          <div class="input-group date" id="datepicker">
-                            <input type="text" class="form-control" value="22/09/1999">
-                            <span class="input-group-append">
-                                <span class="input-group-text bg-white d-block">
-                                    <i class="fa fa-calendar" style="color: var(--main-blue);"></i>
-                                </span>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="text-center">
-                      <button class="btn btn-primary">Changer</button>
-                    </div>
-                  </form> 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row  row-cols-1 row-cols-md-2">
-            <div class="col mb-3">
-              <div class="card">
-                <div class="card-header">Mot de passe</div>
-                <div class="card-body">
-                  Vous voulez changer votre mot de passe ?
-                  <button type="button" class="btn" style="color: var(--main-blue);" data-bs-toggle="modal" data-bs-target="#modalChangePassword">
-                    Cliquez-ici
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="modal fade" id="modalChangePassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <form class="needs-validation" novalidate>
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Vous voulez changer votre mot de passe ?</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Mot de passe actuel</label>
-                          <input type="password" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Nouveau mot de passe actuel</label>
-                          <input type="password" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Confirmation du nouveau mot de passe</label>
-                          <input type="password" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                      <button type="submit" class="btn btn-primary">Changer</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="col mb-3">
-              <div class="card">
-                <div class="card-header">Paramètres supplémentaires</div>
-                <div class="card-body">
-                  Vous voulez supprimer votre compte ?
-                  <button type="button" class="btn" style="color: var(--main-blue);" data-bs-toggle="modal" data-bs-target="#modalDeleteAccount">
-                    Cliquez-ici
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="modal fade" id="modalDeleteAccount" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <form class="needs-validation" novalidate>
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Vous voulez supprimer votre compte ?</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Mot de passe actuel</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-                        </div>
-                        <div class="form-check form-switch mb-3">
-                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" required>
-                          <label class="form-check-label" for="flexSwitchCheckDefault">Je veux supprimer ce compte</label>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                      <button type="submit" class="btn btn-primary">Supprimer</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>
