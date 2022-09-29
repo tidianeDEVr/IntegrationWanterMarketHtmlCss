@@ -859,7 +859,8 @@ footer .footer-bottom{
 .form-section .card{
     width: 600px;
 }
-.form-section .card .card-header{
+.form-section .card .card-header,
+.main-profile .card-header{
     background-color: var(--main-blue);
     color: #fff;
     font-weight: 700;
