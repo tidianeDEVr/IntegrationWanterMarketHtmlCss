@@ -954,4 +954,39 @@ footer .footer-bottom{
     object-fit: cover;
     overflow: hidden;
 }
+
+.dash-product-card .dash-product-card-top img{
+    width: 100% !important;
+    border-radius: 7px;
+    max-height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.dash-product-card .dash-product-card-top .delete-button{
+    background-color: rgba(239, 239, 239, 0.02);
+    top: 5px;
+    right: 5px;
+}
+.dash-product-card .dash-product-card-top .delete-button a i {
+    color: rgb(244, 0, 0);
+}
+.dash-product-card{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 7px;
+    padding: 5px;
+}
+.dash-product-card .dash-product-card-bottom h5{
+    margin-top: 5px;
+    color: var(--main-blue);
+    font-weight: 700;
+}
+
+.dash-product-card .dash-product-card-bottom .product-name{
+    font-size: 14px;
+    
+}
+.dash-product-card .dash-product-card-bottom .viewed-time{
+    color: #666666;
+}
+
 /* SUBSCRIPTION SECTION STYLING END  */

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WANTER MARKET</title>
+    <link href="/assets/images/identity/logo.png" rel="shortcut icon" type="image/x-icon">
+    <!-- Slick Carousel  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"> 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/responsive.css" crossorigin="anonymous">
+</head>
+<body>
+    <!-- NAVBAR START -->
+    <div class="main-navbar mx-auto w-100">
+      <div class="main-navbar-container">
+        <div class="main-navbar-top container my-3 my-md-auto mx-2 mx-md-auto mt-sm-1">
+          <nav class="row">
+            <a class="brands p-0 btn d-flex col col-lg-3 col-md-3 col-sm-6" href="#">
+              <div class="d-flex align-items-center">
+                <img src="assets/images/identity/logo.png" alt="logo wanter market" class="">
+              </div>
+              <h4 class="text-uppercase mx-2 d-none d-md-block">wanter<br>market</h4>
+            </a>
+            <div class="col col-lg-5 col-md-5 d-none d-md-block">
+              <div class="d-flex align-items-center justify-content-center w-100 h-100">
+                  <form class="d-flex w-100">
+                    <input type="text" placeholder="Rechercher un produit ou service" class="">
+                    <button type="submit" class="btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </form>
+              </div>
+            </div>
+            <div class="position-relative d-flex align-items-center justify-content-end col col-lg-4 col-md-4 col-sm-6">
+              <div class="main-navbar-top-actions  d-md-block">
+                  <div class="d-flex h-100">
+                      <button class="btn position-relative">
+                          <i class="fa-action fa-regular fa-heart"></i>
+                          <span class="d-flex justify-content-center align-items-center position-absolute heart-number">0</span>
+                      </button>
+                      <button class="btn">
+                          <i class="fa-action fa-regular fa-user"></i>
+                      </button>
+                      <a href="" class="btn">
+                          <i class="fa-sharp fa-solid fa-plus"></i>
+                          <span class="">Publier un produit</span>
+                      </a>
+                  </div>
+              </div>  
+              <div class="country-select d-flex">
+                <img src="assets/images/countries/senegal.svg" alt="pays" id="selectedCountry">
+                <div class="dropdown">
+                  <button class="btn btn-sm mt-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/images/utils/chevron-down-plain.svg" alt="chevron down">
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><img src="assets/images/countries/senegal.svg" alt="pays" id="selectedCountry"></a></li>
+                    <li><a class="dropdown-item" href="#"><img src="assets/images/countries/senegal.svg" alt="pays" id="selectedCountry"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- Mobile Search Start -->
+        <div class="mobile-search d-block d-md-none">
+          <form class="d-flex w-100">
+            <input type="text" placeholder="Rechercher un produit ou service" class="">
+            <button type="submit" class="btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <!-- Mobile Search End -->
+        <hr class="d-none d-md-block mt-1 ">
+        <div class="d-none pb-2 d-md-block main-navbar-bottom container">
+          <div class="row">
+              <div class="form col col-xl-2 col-lg-3 col-md-6">
+              <form>
+                  <select name="" id="" class="">
+                  <option value="" disabled selected>Toutes les categories</option>
+                  <option value="">Categorie 1</option>
+                  <option value="">Categorie 2</option>
+                  </select>
+              </form>
+              </div>
+              <div class="top-categories col col-xl-8 col-lg-6 d-lg-block d-none">
+                  <div class="top-categories-cont d-flex align-items-center w-100 h-100">
+                      <span>Top Categories :</span>
+                      <div class="d-flex align-items-center">
+                          <ul class="d-flex m-1">
+                          <li><a href="#">Agro Alimentaire</a></li>
+                          <li><a href="#">Telephone et Tablette</a></li>
+                          <li><a href="#">Electronique</a></li>
+                          <li><a href="#">Automobile</a></li>
+                          <li><a href="#">Mode et Beaute</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col col-xl-2 col-lg-3 col-md-6 d-flex justify-content-end">
+                  <a href="" class="btn shop-btn">
+                  <i class="fa-solid fa-house"></i>
+                  <span class="mx-2">Boutiques</span>
+                  </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- NAVBAR END -->
+    <div class="spacer" ></div>
+    <div class="nav-closer position-absolute d-none">
+      <div></div>
+    </div>
+
+    <!-- PROFILE SECTION  START  -->
+    <section class="profile-section d-flex">
+      <aside class="py-3 dashboard-aside">
+        <ul class="mx-3 list-group">
+          <label>Page</label>
+          <li><a href="" class="btn"><i class="fa-solid fa-gauge"></i><span>Tableau de bord</span></a></li>
+          <label class="mb-1">Annonces</label>
+          <li><a href="" class="btn"><i class="fa-solid fa-upload"></i><span>Publier une annonce</span></a></li>
+          <li><a href="" class="btn btn-primary"><i class="fa-solid fa-list"></i><span>Lister mes annonces</span></a></li>
+          <label class="mb-1">Boutique</label>
+          <li><a href="" class="btn "><i class="fa-solid fa-gear"></i><span>Configurer ma boutique</span></a></li>
+          <li><a href="" class="btn"><i class="fa-solid fa-eye"></i><span>Aperçu de ma boutique</span></a></li>
+          <label class="mb-1">Compte</label>
+          <li><a href="" class="btn "><i class="fa-solid fa-user"></i><span>Mon profile</span></a></li>
+          <li><a href="" class="btn"><i class="fa-solid fa-money-bills"></i><span>Mes achats</span></a></li>
+          <li><a href="" class="btn"><i class="fa-solid fa-file-invoice"></i><span>Mes abonnements</span></a></li>
+          <li><a href="" class="btn"><i class="fa-solid fa-right-from-bracket"></i><span>Deconnexion</span></a></li>
+        </ul>
+      </aside>
+      <div class="main-profile flex-fill p-3">
+        <div class="container mb-2 d-flex align-items-center justify-content-between">
+          <button type="button" class="btn btn-primary" id="hideAsideBtn"><i class="fas fa-bars"></i></button>
+          <h5 class="text-end">Editer votre boutique</h5>
+        </div>
+        <div class="container">
+          <div class="row row-cols-4">
+            <div class="col bg-success">
+                ok
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PROFILE SECTION  END  -->
+    
+    <!-- FOOTER START -->
+    <footer>
+      <div class="footer-bottom d-flex align-items-center">
+        <div class="footer-bottom-cont container d-flex justify-content-between">
+          <div class="fbc-left">Copyright © 2022 Wanter Market. All rights reserved.</div>
+          <div class="fbc-right">Développé par Orby Technology</div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- Slick JS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Bootstrap DatePicker JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+    <!-- JavaScript Bootstrap with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js" defer></script>
+</body>
+</html>
