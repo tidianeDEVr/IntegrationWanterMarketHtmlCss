@@ -930,7 +930,10 @@ footer .footer-bottom{
 /* PUBLISH SECTION  STYLING END  */
 
 /* SUBSCRIPTION SECTION STYLING START  */
-
+.main-profile .stat-card{
+    max-width: 550px;
+    margin: 0 auto;
+}
 .main-profile .subscription .card .card-header{
     background-color: var(--main-blue);
     color: #fff;
@@ -963,12 +966,18 @@ footer .footer-bottom{
     object-fit: cover;
 }
 .dash-product-card .dash-product-card-top .delete-button{
-    background-color: rgba(239, 239, 239, 0.02);
     top: 5px;
     right: 5px;
 }
 .dash-product-card .dash-product-card-top .delete-button a i {
     color: rgb(244, 0, 0);
+}
+.dash-product-card .dash-product-card-top .edit-button{
+    top: 5px;
+    left: 5px;
+}
+.dash-product-card .dash-product-card-top .edit-button a i{
+    color: var(--main-blue);
 }
 .dash-product-card{
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -983,7 +992,6 @@ footer .footer-bottom{
 
 .dash-product-card .dash-product-card-bottom .product-name{
     font-size: 14px;
-    
 }
 .dash-product-card .dash-product-card-bottom .viewed-time{
     color: #666666;

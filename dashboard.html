@@ -149,62 +149,29 @@
           <h5 class="text-end">Tableau de bord</h5>
         </div>
         <div class="container">
-          <div class="row row-cols-1 row-cols-lg-2">
-            <div class="col mb-3">
-              <div class="card">
-                <div class="card-header card-header d-flex justify-content-between align-items-center">
-                  <span>Statistiques</span>
-                  <div class=" btn btn-outline-light btn-sm">Modifier <i class="fas fa-edit"></i></div>
-                </div>
-                <div class="card-body text-center">
-                  <div class="mb-3 row card-body-infos">
-                    <span class="fw-bold col cbi-divider">0 Abonné(s)</span>
-                    <span class="fw-bold col">0 Visite(s)</span>
-                  </div>
-                  <div class="row card-body-infos">
-                    <span class="fw-bold col cbi-divider">0 Produit(s)</span>
-                    <span class="fw-bold col">50 Restants</span>
-                  </div>
-                </div>
+          <div class="card mb-3 stat-card">
+            <div class="card-header card-header d-flex justify-content-between align-items-center">
+              <span>Statistiques</span>
+              <div class=" btn btn-outline-light btn-sm">Modifier <i class="fas fa-edit"></i></div>
+            </div>
+            <div class="card-body text-center">
+              <div class="mb-3 row card-body-infos">
+                <span class="fw-bold col cbi-divider">
+                  0 <br class="d-block d-sm-none">Abonné(s)
+                </span>
+                <span class="fw-bold col">
+                  0 <br class="d-block d-sm-none">Visite(s)
+                </span>
+              </div>
+              <div class="row card-body-infos">
+                <span class="fw-bold col cbi-divider">
+                  0 <br class="d-block d-sm-none">Produit(s)
+                </span>
+                <span class="fw-bold col">
+                  50 <br class="d-block d-sm-none">Restants
+                </span>
               </div>
             </div>
-            <!-- <div class="col mb-3">
-              <div class="card">
-                <div class="card-header d-flex justify-content-between align-items-center">
-                  <span>Derniers Abonnements </span>
-                  <div class=" btn btn-outline-light btn-sm">Voir tout <i class="fas fa-list"></i></div>
-                </div>
-                <div class="card-body">
-                  <table class="table">
-                      <thead>
-                          <tr>
-                              <th scope="col">N•</th>
-                              <th scope="col">Plan</th>
-                              <th scope="col">Deals</th>
-                              <th scope="col">Annonces</th>
-                              <th scope="col">Jours</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                              <th scope="row">1</th>
-                              <td>Mark</td>
-                              <td>Otto</td>
-                              <td>@mdo</td>
-                              <td>12</td>
-                          </tr>
-                          <tr>
-                              <th scope="row">2</th>
-                              <td>Jacob</td>
-                              <td>Thornton</td>
-                              <td>@fat</td>
-                              <td>12</td>
-                          </tr>
-                      </tbody>
-                  </table>
-                </div>
-              </div>
-            </div> -->
           </div>
           <div class="row">
             <div class="col-12">
@@ -219,21 +186,26 @@
                         <div class="dash-product-card-top position-relative ">
                           <img src="assets/images/annonces/annonce-2.png" alt="product">
                           <div class="delete-button position-absolute">
-                            <a href="" class="btn btn-light">
+                            <a href="" class="btn-sm btn btn-light">
                               <i class="fas fa-trash-alt"></i>
+                            </a>
+                          </div>
+                          <div class="edit-button position-absolute">
+                            <a href="" class="btn-sm btn btn-light">
+                              <i class="fas fa-edit"></i>
                             </a>
                           </div>
                         </div>
                         <div class="dash-product-card-bottom">
-                          <h5>1 000 FCFA</h5>
+                          <h5 class="m-0">1 000 FCFA</h5>
                           <span class="product-name">Nom produit</span>
                           <div class="viewed-time d-flex  justify-content-start align-items-center">
                             <i class="fa-solid fa-eye"></i> 
                             <span class="mx-2 ">0 vues</span>
                           </div>
-                          <div class="actions d-flex justify-content-between align-items-center">
+                          <div class="mt-2 actions d-flex justify-content-between align-items-center">
                             <div>
-                              <a class="btn btn-sm btn-primary" href="">Modifier</a>
+                              <a class="btn btn-sm btn-primary" href="">Booster</a>
                             </div>
                             <div class="form-check form-switch">
                               <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
@@ -247,21 +219,26 @@
                         <div class="dash-product-card-top position-relative ">
                           <img src="assets/images/annonces/annonce-2.png" alt="product">
                           <div class="delete-button position-absolute">
-                            <a href="" class="btn btn-light">
+                            <a href="" class="btn-sm btn btn-light">
                               <i class="fas fa-trash-alt"></i>
+                            </a>
+                          </div>
+                          <div class="edit-button position-absolute">
+                            <a href="" class="btn-sm btn btn-light">
+                              <i class="fas fa-edit"></i>
                             </a>
                           </div>
                         </div>
                         <div class="dash-product-card-bottom">
-                          <h5>1 000 FCFA</h5>
+                          <h5 class="m-0">1 000 FCFA</h5>
                           <span class="product-name">Nom produit</span>
                           <div class="viewed-time d-flex  justify-content-start align-items-center">
                             <i class="fa-solid fa-eye"></i> 
                             <span class="mx-2 ">0 vues</span>
                           </div>
-                          <div class="actions d-flex justify-content-between align-items-center">
+                          <div class="mt-2 actions d-flex justify-content-between align-items-center">
                             <div>
-                              <a class="btn btn-sm btn-primary" href="">Modifier</a>
+                              <a class="btn btn-sm btn-primary" href="">Booster</a>
                             </div>
                             <div class="form-check form-switch">
                               <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
@@ -275,21 +252,26 @@
                         <div class="dash-product-card-top position-relative ">
                           <img src="assets/images/annonces/annonce-2.png" alt="product">
                           <div class="delete-button position-absolute">
-                            <a href="" class="btn btn-light">
+                            <a href="" class="btn-sm btn btn-light">
                               <i class="fas fa-trash-alt"></i>
+                            </a>
+                          </div>
+                          <div class="edit-button position-absolute">
+                            <a href="" class="btn-sm btn btn-light">
+                              <i class="fas fa-edit"></i>
                             </a>
                           </div>
                         </div>
                         <div class="dash-product-card-bottom">
-                          <h5>1 000 FCFA</h5>
+                          <h5 class="m-0">1 000 FCFA</h5>
                           <span class="product-name">Nom produit</span>
                           <div class="viewed-time d-flex  justify-content-start align-items-center">
                             <i class="fa-solid fa-eye"></i> 
                             <span class="mx-2 ">0 vues</span>
                           </div>
-                          <div class="actions d-flex justify-content-between align-items-center">
+                          <div class="mt-2 actions d-flex justify-content-between align-items-center">
                             <div>
-                              <a class="btn btn-sm btn-primary" href="">Modifier</a>
+                              <a class="btn btn-sm btn-primary" href="">Booster</a>
                             </div>
                             <div class="form-check form-switch">
                               <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
@@ -303,21 +285,26 @@
                         <div class="dash-product-card-top position-relative ">
                           <img src="assets/images/annonces/annonce-2.png" alt="product">
                           <div class="delete-button position-absolute">
-                            <a href="" class="btn btn-light">
+                            <a href="" class="btn-sm btn btn-light">
                               <i class="fas fa-trash-alt"></i>
+                            </a>
+                          </div>
+                          <div class="edit-button position-absolute">
+                            <a href="" class="btn-sm btn btn-light">
+                              <i class="fas fa-edit"></i>
                             </a>
                           </div>
                         </div>
                         <div class="dash-product-card-bottom">
-                          <h5>1 000 FCFA</h5>
+                          <h5 class="m-0">1 000 FCFA</h5>
                           <span class="product-name">Nom produit</span>
                           <div class="viewed-time d-flex  justify-content-start align-items-center">
                             <i class="fa-solid fa-eye"></i> 
                             <span class="mx-2 ">0 vues</span>
                           </div>
-                          <div class="actions d-flex justify-content-between align-items-center">
+                          <div class="mt-2 actions d-flex justify-content-between align-items-center">
                             <div>
-                              <a class="btn btn-sm btn-primary" href="">Modifier</a>
+                              <a class="btn btn-sm btn-primary" href="">Booster</a>
                             </div>
                             <div class="form-check form-switch">
                               <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
@@ -331,105 +318,26 @@
                         <div class="dash-product-card-top position-relative ">
                           <img src="assets/images/annonces/annonce-2.png" alt="product">
                           <div class="delete-button position-absolute">
-                            <a href="" class="btn btn-light">
+                            <a href="" class="btn-sm btn btn-light">
                               <i class="fas fa-trash-alt"></i>
+                            </a>
+                          </div>
+                          <div class="edit-button position-absolute">
+                            <a href="" class="btn-sm btn btn-light">
+                              <i class="fas fa-edit"></i>
                             </a>
                           </div>
                         </div>
                         <div class="dash-product-card-bottom">
-                          <h5>1 000 FCFA</h5>
+                          <h5 class="m-0">1 000 FCFA</h5>
                           <span class="product-name">Nom produit</span>
                           <div class="viewed-time d-flex  justify-content-start align-items-center">
                             <i class="fa-solid fa-eye"></i> 
                             <span class="mx-2 ">0 vues</span>
                           </div>
-                          <div class="actions d-flex justify-content-between align-items-center">
+                          <div class="mt-2 actions d-flex justify-content-between align-items-center">
                             <div>
-                              <a class="btn btn-sm btn-primary" href="">Modifier</a>
-                            </div>
-                            <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="dash-product-card">
-                        <div class="dash-product-card-top position-relative ">
-                          <img src="assets/images/annonces/annonce-2.png" alt="product">
-                          <div class="delete-button position-absolute">
-                            <a href="" class="btn btn-light">
-                              <i class="fas fa-trash-alt"></i>
-                            </a>
-                          </div>
-                        </div>
-                        <div class="dash-product-card-bottom">
-                          <h5>1 000 FCFA</h5>
-                          <span class="product-name">Nom produit</span>
-                          <div class="viewed-time d-flex  justify-content-start align-items-center">
-                            <i class="fa-solid fa-eye"></i> 
-                            <span class="mx-2 ">0 vues</span>
-                          </div>
-                          <div class="actions d-flex justify-content-between align-items-center">
-                            <div>
-                              <a class="btn btn-sm btn-primary" href="">Modifier</a>
-                            </div>
-                            <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="dash-product-card">
-                        <div class="dash-product-card-top position-relative ">
-                          <img src="assets/images/annonces/annonce-2.png" alt="product">
-                          <div class="delete-button position-absolute">
-                            <a href="" class="btn btn-light">
-                              <i class="fas fa-trash-alt"></i>
-                            </a>
-                          </div>
-                        </div>
-                        <div class="dash-product-card-bottom">
-                          <h5>1 000 FCFA</h5>
-                          <span class="product-name">Nom produit</span>
-                          <div class="viewed-time d-flex  justify-content-start align-items-center">
-                            <i class="fa-solid fa-eye"></i> 
-                            <span class="mx-2 ">0 vues</span>
-                          </div>
-                          <div class="actions d-flex justify-content-between align-items-center">
-                            <div>
-                              <a class="btn btn-sm btn-primary" href="">Modifier</a>
-                            </div>
-                            <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="dash-product-card">
-                        <div class="dash-product-card-top position-relative ">
-                          <img src="assets/images/annonces/annonce-2.png" alt="product">
-                          <div class="delete-button position-absolute">
-                            <a href="" class="btn btn-light">
-                              <i class="fas fa-trash-alt"></i>
-                            </a>
-                          </div>
-                        </div>
-                        <div class="dash-product-card-bottom">
-                          <h5>1 000 FCFA</h5>
-                          <span class="product-name">Nom produit</span>
-                          <div class="viewed-time d-flex  justify-content-start align-items-center">
-                            <i class="fa-solid fa-eye"></i> 
-                            <span class="mx-2 ">0 vues</span>
-                          </div>
-                          <div class="actions d-flex justify-content-between align-items-center">
-                            <div>
-                              <a class="btn btn-sm btn-primary" href="">Modifier</a>
+                              <a class="btn btn-sm btn-primary" href="">Booster</a>
                             </div>
                             <div class="form-check form-switch">
                               <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
