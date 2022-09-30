@@ -157,9 +157,23 @@
                     <p>
                       Une annonce avec une image de qualité obtient plus de visibilité et augmente vos chances de vendre plus rapidement.
                     </p>
-                    <input class="mb-3 form-control" type="file" id="images" accept="image/png, image/gif, image/jpeg" multiple>
-                    <div class="display-images">
-                      <div class="d-flex"></div>
+                    <input type="file" id="image1" accept="image/png, image/gif, image/jpeg" hidden>
+                    <input type="file" id="image2" accept="image/png, image/gif, image/jpeg" hidden>
+                    <input type="file" id="image3" accept="image/png, image/gif, image/jpeg" hidden>
+                    <input type="file" id="image4" accept="image/png, image/gif, image/jpeg" hidden>
+                    <div class="display-images row row-cols-4 row-cols-xl-5">
+                      <div class="col p-1 p-md-3">
+                        <label for="image1"><img class="imageUpload1" src="assets/images/utils/add-image.png" alt="image"></label>
+                      </div>
+                      <div class="col p-1 p-md-3">
+                        <label for="image2"><img class="imageUpload2" src="assets/images/utils/add-image.png" alt="image"></label>
+                      </div>
+                      <div class="col p-1 p-md-3">
+                        <label for="image3"><img class="imageUpload3" src="assets/images/utils/add-image.png" alt="image"></label>
+                      </div>
+                      <div class="col p-1 p-md-3">
+                        <label for="image4"><img class="imageUpload4" src="assets/images/utils/add-image.png" alt="image"></label>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -212,7 +226,7 @@
                       Remplissez toutes les informations nécessaires qui rendront votre annonce intéressante et unique.
                     </p>
                     <div class="mb-3 row">
-                      <div class="col">
+                      <div class="col-12 mb-3">
                         <label for="exampleInputEmail1" class="form-label">Catégorie</label>
                         <select class="form-select" aria-label="Default select example">
                           <option selected>Open this select menu</option>
@@ -221,7 +235,7 @@
                           <option value="3">Three</option>
                         </select>
                       </div>
-                      <div class="col">
+                      <div class="col-12">
                         <label for="exampleInputEmail1" class="form-label">Sous-catégorie</label>
                         <select class="form-select" aria-label="Default select example">
                           <option selected>Open this select menu</option>
@@ -236,7 +250,7 @@
               </div>
             </div>
             <div class=" mt-3">
-              <button type="submit" class="btn btn-primary"> Ajouter le produit</button>
+              <button type="submit" class="w-100 text-uppercase fw-bold btn btn-primary"> Ajouter le produit</button>
             </div>
           </form>
         </div>

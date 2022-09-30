@@ -118,6 +118,27 @@ $('.btn-details-vendeur').click(function(){
   })
 })()
 
+// change image path function
+function changeImageDisplay(input, image, path){
+  $(input).change(function() {
+    var input = this;
+    var url = $(this).val();
+    var ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
+    if (input.files && input.files[0] && (ext == "gif" || ext == "png" || ext == "jpeg" || ext == "jpg")) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+            $(image).attr('src', e.target.result);
+        }
+        reader.readAsDataURL(input.files[0]);
+    } else {
+        $(image).attr('src', path);
+    }
+});
+}
+
+
+
 // Change Avatar
 $(function() {
   $('#avatar').change(function() {
@@ -145,24 +166,76 @@ $('#hideAsideBtn').click(function(){
 });
 
 // Upload Annonce Images
-$("#images").change(function(){
-  $( ".display-images .d-flex" ).html('');
-  var images = $('#images').prop('files');
-  for (var i = 0; i < images.length; i++) {
-    var url = $(this).val();
-    var ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
-    if (images[i] && images[i] && (ext == "gif" || ext == "png" || ext == "jpeg" || ext == "jpg")) {
-      const reader = new FileReader();
-      reader.onload = function() {
-        const img = new Image(150, 150);
-        img.src = reader.result;
-        img.alt = 'annonce'
-        img.className = 'img-annonce'
-        document.querySelector('.display-images .d-flex').appendChild(img);
+$(function() {
+  $('#image1').change(function() {
+      var input = this;
+      var url = $(this).val();
+      var ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
+      if (input.files && input.files[0] && (ext == "gif" || ext == "png" || ext == "jpeg" || ext == "jpg")) {
+          var reader = new FileReader();
+
+          reader.onload = function(e) {
+              $('.imageUpload1').attr('src', e.target.result);
+          }
+          reader.readAsDataURL(input.files[0]);
+      } else {
+          $('.imageUpload1').attr('src', 'assets/images/utils/add-image.png');
       }
-      reader.readAsDataURL(images[i]); 
-    }
-  }
+  });
+});
+
+$(function() {
+  $('#image2').change(function() {
+      var input = this;
+      var url = $(this).val();
+      var ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
+      if (input.files && input.files[0] && (ext == "gif" || ext == "png" || ext == "jpeg" || ext == "jpg")) {
+          var reader = new FileReader();
+
+          reader.onload = function(e) {
+              $('.imageUpload2').attr('src', e.target.result);
+          }
+          reader.readAsDataURL(input.files[0]);
+      } else {
+          $('.imageUpload2').attr('src', 'assets/images/utils/add-image.png');
+      }
+  });
+});
+
+$(function() {
+  $('#image3').change(function() {
+      var input = this;
+      var url = $(this).val();
+      var ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
+      if (input.files && input.files[0] && (ext == "gif" || ext == "png" || ext == "jpeg" || ext == "jpg")) {
+          var reader = new FileReader();
+
+          reader.onload = function(e) {
+              $('.imageUpload3').attr('src', e.target.result);
+          }
+          reader.readAsDataURL(input.files[0]);
+      } else {
+          $('.imageUpload3').attr('src', 'assets/images/utils/add-image.png');
+      }
+  });
+});
+
+$(function() {
+  $('#image4').change(function() {
+      var input = this;
+      var url = $(this).val();
+      var ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
+      if (input.files && input.files[0] && (ext == "gif" || ext == "png" || ext == "jpeg" || ext == "jpg")) {
+          var reader = new FileReader();
+
+          reader.onload = function(e) {
+              $('.imageUpload4').attr('src', e.target.result);
+          }
+          reader.readAsDataURL(input.files[0]);
+      } else {
+          $('.imageUpload4').attr('src', 'assets/images/utils/add-image.png');
+      }
+  });
 });
 
 // Display Menu On Mobile 
