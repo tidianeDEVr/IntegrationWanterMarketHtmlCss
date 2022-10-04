@@ -939,8 +939,8 @@ footer .footer-bottom{
 
 /* SUBSCRIPTION SECTION STYLING START  */
 .main-profile .stat-card{
-    max-width: 550px;
-    margin: 0 auto;
+    /* max-width: 550px; */
+    /* margin: 0 auto; */
 }
 .main-profile .subscription .card .card-header{
     background-color: var(--main-blue);
@@ -948,6 +948,9 @@ footer .footer-bottom{
 }
 
 .main-profile .card-body .cbi-divider{
+    border-right: #000 1px solid;
+}
+.main-profile .card-body .cbi-divider-visite{
     border-right: #000 1px solid;
 }
 
