@@ -938,10 +938,6 @@ footer .footer-bottom{
 /* PUBLISH SECTION  STYLING END  */
 
 /* SUBSCRIPTION SECTION STYLING START  */
-.main-profile .stat-card{
-    /* max-width: 550px; */
-    /* margin: 0 auto; */
-}
 .main-profile .subscription .card .card-header{
     background-color: var(--main-blue);
     color: #fff;
