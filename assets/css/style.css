@@ -619,6 +619,12 @@ footer .footer-bottom{
 .shop-section .ss-bottom{
     margin-top: -80px;
 }
+.shop-section .ss-bottom img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
 .shop-section .ss-bottom .infos{
     margin-top: 70px;
 }
@@ -729,7 +735,7 @@ footer .footer-bottom{
     overflow: hidden;
     cursor: pointer;
 }
-/* .single-product-section .container .row .product-details .display-images{
+.single-product-section .container .row .product-details .display-images{
     height: 510px;
 }
 .single-product-section .container .row .product-details .display-images .di-left{
@@ -754,7 +760,7 @@ footer .footer-bottom{
     height: 100%;
     object-fit: cover;
     overflow: hidden;
-} */
+}
 .single-product-section .container .row .product-details .product-details-infos .price-mobile{
     font-weight: 700;
     color: var(--main-blue);
@@ -952,7 +958,6 @@ footer .footer-bottom{
 
 .main-profile .card-body .card-body-infos{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    margin:0  20px ;
     padding:  20px ;
 }
 

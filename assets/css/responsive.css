@@ -40,9 +40,6 @@
     .main-profile .card-body .row span{
         padding: 10px 0;
     }
-    .main-profile .card-body .cbi-divider-visite{
-        border: none;
-    }
 }
 
 @media (max-width:768px) {
@@ -75,14 +72,7 @@
 @media (max-width:768px) {
     .spacer{
         height: 132px;
-    }
-    .main-profile .card-body .cbi-divider{
-        border: none; 
-        border-bottom: 1px solid black;
-    }
-    .main-profile .card-body .cbi-divider-visite{
-        border-bottom: 1px solid black;
-    }
+    } 
 }
 
 @media (max-width:994px) {
@@ -185,7 +175,11 @@
     .ps-grid-card .ps-grid-card-bottom .article-btns a i{
         margin: 0 2.5px ;
     }
-    
+    .shop-section .ss-bottom img{
+        width: 150px;
+        height: 150px;
+        margin-bottom: -50px;
+    }
 }
 
 @media (max-width:320px) {
